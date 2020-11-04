@@ -147,10 +147,37 @@
                 </div>
               </div>
               <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+                <div class="container">
+                <div class="row">
+                  <div class="col-md-6"><!------Popover-->
+                    <a href="#" data-toggle="popover" title="Popover Header" data-content="">Text</a>
+                  </div>
+                  <div class="col-md-6"><img src="/Photos/home/mug blanc.jpeg" class="img-thumbnail" alt=""> 
+                  </div> 
+                </div>
+                
+               
+              </div>
                
               </div>
               <div class="tab-pane fade" id="nav-about" role="tabpanel" aria-labelledby="nav-about-tab">
-                Et et consectetur ipsum labore excepteur est proident excepteur ad velit occaecat qui minim occaecat veniam. Fugiat veniam incididunt anim aliqua enim pariatur veniam sunt est aute sit dolor anim. Velit non irure adipisicing aliqua ullamco irure incididunt irure non esse consectetur nostrud minim non minim occaecat. Amet duis do nisi duis veniam non est eiusmod tempor incididunt tempor dolor ipsum in qui sit. Exercitation mollit sit culpa nisi culpa non adipisicing reprehenderit do dolore. Duis reprehenderit occaecat anim ullamco ad duis occaecat ex.
+               <div class="container">
+                 <div class="row">
+                  <form class="md-form">
+                    <div class="file-field big">
+                      <a class="btn-floating btn-lg pink lighten-1 mt-0 float-left">
+                        <i class="fas fa-paperclip" aria-hidden="true"></i>
+                        <input type="file" multiple>
+                      </a>
+                      <div class="file-path-wrapper">
+                        <input class="file-path validate" type="text" placeholder="Upload one or more files">
+                      </div>
+                    </div>
+                  </form>
+
+                   </div>
+                 </div>
+               </div>
               </div>
             </div>
           
@@ -167,5 +194,10 @@
 
 
  </section>
+ <script>
+  $(document).ready(function(){
+    $('[data-toggle="popover"]').popover();
+  });
+  </script>
 </body>
 </html>
