@@ -65,7 +65,18 @@
                       <div class="container">  
                         <div class="col-4 col-sm-6">   
                         <div id="html5"></div>
-                        
+                        <!------------Range------------------->
+                      
+
+<div>
+  <input type="range" id="volume" name="volume"
+         min="0" max="11">
+  <label for="Price" > Price</span> </label>
+</div>
+
+
+
+                        <!------------------------------------>
                               <label for="">Min Price</label>
                               <input type="number" id="input-select" min="200" max="1000" step="1" id="input-number">
                               <label for="">Max Price</label>
@@ -448,55 +459,7 @@
         header.classList.toggle("sticky", window.scrollY > 0);
         
      });
-    </script>
-<!-------------------------------------------Range slider---------------------------------------------->
-<script type="text/javascript" >
-  var select = document.getElementById('input-select');
-
-// Append the option elements
-for ( var i = 200; i <= 1000; i++ ){
-
-	var option = document.createElement("option");
-		option.text = i;
-		option.value = i;
-
-	select.appendChild(option);
-}
-
-
-var html5Slider = document.getElementById('html5');
-
-noUiSlider.create(html5Slider, {
-	start: [ 500, 800 ],
-	connect: true,
-	range: {
-		'min': 200,
-		'max': 1000
-	}
-});
-
-var inputNumber = document.getElementById('input-number');
-
-html5Slider.noUiSlider.on('update', function( values, handle ) {
-
-	var value = values[handle];
-
-	if ( handle ) {
-		inputNumber.value = value;
-	} else {
-		select.value = Math.round(value);
-	}
-});
-
-select.addEventListener('change', function(){
-	html5Slider.noUiSlider.set([this.value, null]);
-});
-
-inputNumber.addEventListener('change', function(){
-	html5Slider.noUiSlider.set([null, this.value]);
-});
-
-
 </script>
+
 </body>
 </html>
