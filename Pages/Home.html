@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
@@ -16,8 +18,11 @@
 </head>
 <body>
 <!--------------------------------------------Nav-------------------------------------------------------->
+<!-----Classe sticky pour la fonction JS------>
 <header class="sticky">
+<!-------------Logo----------->
 <a href="#" class="logo">Ruyuu Print</a>
+<!-----------Nav----------------->
 <ul class="navigation">
    <li><a href="">Home</a></li>
    <li><a href="">About Us</a></li>
@@ -28,7 +33,7 @@
         <li><a  id="l1" href="Notebook.html">Notebook</a> </li>
         <li><a id="l1" href="Mug.html">Mug</a></li>
         <li><a id="l1" href="PackMutchy.html">Pack Mutchy</a></li>
-    </ul>
+       </ul>
     </li>
    <li><a href=""><img src="https://img.icons8.com/windows/32/000000/shopping-basket-2.png"/></a></li>
    <li><a href="contact.html">Contact</a></li>
@@ -37,42 +42,185 @@
 <!-------------------------------------------Background image+Slogan+button--------------------------------------------------------->
 <section class="banner" id="banner">
     <div class="content">
+    <!---------Slogan------------>
      <h2>We do it Best</h2>
-    
-     <a href="#" class="btn1">Register Now</a>
-    
+     <!---------Bouton Register------------>
+ 
+     <button  class="btn1" id="LoginButton" data-toggle="modal" data-target="#LoginModal ">
+      Log in 
+      </button>
+
+      <!----------------------------------------Modal----------------------------------------------- -->
+  
+  <div class="modal fade" id="LoginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">Log in</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="card">
+            <article class="card-body">
+   
+              <h4 class="card-title mb-4 mt-1">Sign in</h4>
+              <p>
+                <a href="" class="btn btn-block btn-outline-info"> <i class="fab fa-twitter"></i>   Login via Twitter</a>
+                <a href="" class="btn btn-block btn-outline-primary"> <i class="fab fa-facebook-f"></i>   Login via facebook</a>
+              </p>
+              <hr>
+              <form class="needs-validation"novalidate>
+                <div class="form-group">
+                    <input name="" class="form-control" placeholder="Email or login" type="email" required>
+                    <div class="valid-feedback">
+                      Looks good!
+                    </div>
+                    <div class="invalid-feedback">
+                      Please enter your email
+                    </div>
+                </div> <!-- form-group// -->
+                <div class="form-group">
+                    <input class="form-control" placeholder="******" type="password"required>
+                    <div class="valid-feedback">
+                      Looks good!
+                    </div>
+                </div> <!-- form-group// -->                                      
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-primary btn-block"> Login  </button>
+                        </div> <!-- form-group// -->
+                    </div>
+                    <div class="col-md-6 text-right">
+                        <a class="small" href="#">Forgot password?</a>
+                    </div>                                            
+                </div> <!-- .row// -->                                                                  
+            </form>
+        </div>
+        </div>
+        <div class="modal-footer">
+      
+        </div>
+      </div>
     </div>
+  </div>
+  <!-----------------------------------------------------2éme Modal--------------------------------------------------------------->
+  <button  class="btn1" id="LoginButton" data-toggle="modal" data-target="#RegisterModal">
+    Register
+    </button>
+    
+    <!-- Modal -->
+    <div class="modal fade" id="RegisterModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">Register</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="modal-body">
+              <div class="card">
+                <article class="card-body">
+                  <h4 class="card-title mb-4 mt-1">Register</h4>
+                  
+                  <hr>
+                  <form class="needs-validation" novalidate>
+                    <div class="row">
+                      <div class="col-xs-6 col-sm-6 col-md-6">
+                        <div class="form-group">
+                          <input type="text" name="first_name" id="first_name" class="form-control input-sm" placeholder="First Name"required>
+                          <div class="valid-feedback">
+                            Looks good!
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-xs-6 col-sm-6 col-md-6">
+                        <div class="form-group">
+                          <input type="text" name="last_name" id="last_name" class="form-control input-sm" placeholder="Last Name"required>
+                          <div class="valid-feedback">
+                            Looks good!
+                          </div>
+                        </div>
+                      </div>
+                    </div>                                     
+                    <div class="row">
+                        <div class="col-md-12">
+                          <div class="form-group">
+                            <input type="email" name="email" id="email" class="form-control input-sm" placeholder="Email Address"required>
+                            <div class="valid-feedback">
+                              Looks good!
+                            </div>
+                          </div>
+                        </div>
+                                                               
+                    </div> <!-- .row// -->   
+                    <div class="row">
+                      <div class="col-xs-6 col-sm-6 col-md-6">
+                        <div class="form-group">
+                          <input type="password" name="password" id="password" class="form-control input-sm" placeholder="Password"required>
+                          <div class="valid-feedback">
+                            Looks good!
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-xs-6 col-sm-6 col-md-6">
+                        <div class="form-group">
+                          <input type="password" name="password_confirmation" id="password_confirmation" class="form-control input-sm" placeholder="Confirm Password" required>
+                          <div class="valid-feedback">
+                            Looks good!
+                          </div>
+                        </div>
+                      </div>
+                    </div>  
+                    <button type="submit" class="btn btn-primary btn-block"> Register </button>
+                  </form>
+            </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            
+          </div>
+        </div>
+      </div>
+    </div>         
+ </div>
+</div>
 </section>  
 <!-------------------------------------------------About Us ---------------------------------------------------->
 <section class="about" id="about">
-    <div class="row">
-        <div class="col50">
+  <div class="container-fluid">
+    <div class="row d-flex justify-content-between">
+        <div class="col-md-6 col-sm-12 position-relative">
             <h2 class="title-text"><span>A</span>baout Us</h2>
-            <p id="aboutP">
+            <p class="font-weight-bold text-dark">
                 Ruyuu Print offers you a whole bunch of personalized objects: <br>
                  mugs, key rings, plant pots, notebooks.
                 You can select colors and formats. Ryuu Print also offers you a wide choice of articles with your favorite series or anime characters. It is Geeks' paradise.
-                They provide home delivery service with MedExpress at 5 dinars.</p> <br>
-            <p id="aboutP">
+                They provide home delivery service with MedExpress at 5 dinars.
+            </p> <br>
+            <p class="font-weight-bold text-dark">
                 If you are looking for original and unique gift ideas you are in the right Place !
-
-            </p>
+           </p>
         </div>
-        <div class="col50">
-            <div class="imgbx">
-                <img src="/Photos/home/25.jpg" alt="">
+        <div class="col-md-6  col-sm-12 position-relative ">
+            <div >
+                <img src="/Photos/home/25.jpg" class="img-fluid img-thumbnail" alt="">
             </div>
         </div>
     </div>
-
+  </div>
 </section>
 
-<!----------------------------------------------Shop----------------------------------------------------->
+<!----------------------------------------------Products Section-------------------------------------->
 <section class="menu" id="menu">
     <div class="title">
         <h2 class="title-text"><span> O</span>ur <span>P</span> roducts</h2>  
     </div>
-  
+      <!--------------------------First carouseel------------------------------->
         <div id="demo" class="carousel slide" data-ride="carousel">
       
         <!-- Indicators -->
@@ -91,16 +239,14 @@
                 
               </a>
               
-             
-      
-            </div>
+            </div> 
+        <!--------------Cards------------------------------------------------------------------------->
+            
             <div class="col-xs-4 col-sm-4 col-md-4">
               <a href="#" onclick=abc(this) class="slider_info">
                 <img class="img-fluid card-img-top rounded-bottom" src="/Photos/home/2.jpg" style="width: 340px; height: 300px;">
-                
               </a>
-              
-      
+             
             </div>
             <div class="col-xs-4 col-sm-4 col-md-4">
               <a href="#" onclick=abc(this) class="slider_info">
@@ -110,7 +256,7 @@
              
             </div>
           </div>
-          <!----2éme slide----->
+          
           <div class="carousel-item">
             <div class="col-xs-4 col-sm-4 col-md-4">
               <a href="#" onclick=abc(this) class="slider_info">
@@ -139,18 +285,12 @@
           </div>
         </div>
       
-        <!-- Left and right controls -->
-        <a class="carousel-control-prev" href="#demo" data-slide="prev">
-           <span class="carousel-control-prev-icon sp"></span>
-                      </a>
-        <a class="carousel-control-next" href="#demo" data-slide="next">
-                          <span class="carousel-control-next-icon sp"></span>
-                      </a>
-     
+      
     </div>
-  </section>
+  
+  <!--------------------------Button Visit shop--------------------------------->
   <div id="shopbtn"><a href="#" class="btn1">Visit Shop</a></div>
-  <!------------------------------------------2éme Slide-------------------------------------------------------->
+  <!------------------------------------------Second Slide-------------------------------------------------------->
   <section>
     <div id="demo" class="carousel slide" data-ride="carousel">
       
@@ -218,106 +358,69 @@
           </div>
         </div>
       
-        <!-- Left and right controls -->
-        <a class="carousel-control-prev" href="#demo" data-slide="prev">
-           <span class="carousel-control-prev-icon sp"></span>
-                      </a>
-        <a class="carousel-control-next" href="#demo" data-slide="next">
-                          <span class="carousel-control-next-icon sp"></span>
-                      </a>
+        
      
     </div>
   </section>
   <!-----------------------------------------------News Letter--------------------------------------------------->
-  <section class="bg-secondary text-center p-5 mt-4">
+  <section class=" text-center p-1" id="newsletter">
     <div class="container p-3">
         <h3>SUBSCRIBE NOW</h3>
         <form action="#" method="Post">
-            <input type="text" name="text" placeholder="Enter Your Email Id">
+            <input type="text" id="newsinput" name="text" placeholder="Enter Your Email Id">
             <button type="button" class="btn btn-dark">Subscribe</button>
         </form>
     </div>
-</section>
-  <!-- Footer -->
+</section><br><br><br>
+  <!---------------------- ----------------------Footer----------------------------------------------- -->
 
 <footer class="page-footer font-small  pt-4">
   
     <!-- Footer Links -->
     <div class="container-fluid text-center text-md-left">
   
-      <!-- Grid row -->
+  
       <div class="row">
   
-        <!-- Grid column -->
         <div class="col-md-6 mt-md-0 mt-3">
   
-          <!-- Content -->
+          <!-- Description ------------------------------------------>
           <h5 class="text-uppercase text-danger">Ruyuu Print</h5>
           <span id="desc-footer"> Ruyuu Print offers you a whole bunch of personalized objects: 
                  mugs, key ings, plant pots, notebooks.
                 You can select colors and formats.</span>
   
         </div>
-        <!-- Grid column -->
+       
   
-        <hr class="clearfix w-100 d-md-none pb-3">
-  
-        <!-- Grid column -->
-        <div class="col-md-3 mb-md-0 mb-3">
-  
-          <!-- Links -->
-          <h5 class="text-uppercase text-danger">Quik Links</h5>
-  
-          <ul class="list-unstyled">
-            <li>
-              <a href="">Home</a>
-            </li>
-            <li>
-              <a href="">About Us</a>
-            </li>
-            <li>
-              <a href="#!">Customized</a>
-            </li>
-            <li>
-              <a href="#!">Shop</a>
-                
-            </li>
+    <hr class="clearfix w-100 d-md-none pb-3">
 
-            </li>
-          </ul>
+    <div class="col-md-3 mb-md-0 mb-3">
   
-        </div>
-        <a href="https://icons8.com/icon/47751/email"></a>
-  
-        <!-- Grid column -->
-  
-        <!-- Grid column -->
+      <!-----------------------Quik Links--------------------- -->
+          <h5 class="text-uppercase text-danger">Quik Links</h5>
+          <a href="/Pages/Home.html">Home</a><br>
+          <a href="#about">About Us</a><br>
+          <a href="/Pages/Customized.html">Customized</a><br>
+          <a href="/Pages/Shop.html">Shop</a><br>
+          <a href="/Pages/Notebook.html">Notebook</a><br>
+          <a href="/Pages/Mug.html">Mug</a><br>
+          <a href="">Cart</a><br>
+          <a href="">Contact</a><br>
+    </div>
+       <!--------------------------Conatct Icons------------------------>
         <div class="col-md-3 mb-md-0 mb-3">
-  
-          <!-- Links -->
-          <h5 class="text-uppercase text-danger">Links</h5>
-          <ul class="list-unstyled">
-            <li>
-              <img src="https://img.icons8.com/carbon-copy/64/000000/email.png"/>        </li>
-            <li>
-               <i class="far fa-envelope"></i>
-  
-            </li>
-            <li>
-            </li>
-            <li>
-              <a href="#!">Link 4</a>
-            </li>
-          </ul>
-  
+          <h5 class="text-uppercase text-danger">Contact</h5>
+          <ul class="social_footer_ul list-unstyled">
+            <li><a href="http://webenlance.com"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="http://webenlance.com"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="http://webenlance.com"><i class="fab fa-linkedin"></i></a></li>
+            <li><a href="http://webenlance.com"><i class="fab fa-instagram"></i></a></li>
+            </ul>
         </div>
-        <!-- Grid column -->
-  
-      </div>
-      <!-- Grid row -->
   
     </div>
-    <!-- Footer Links -->
+   
   
     <!-- Copyright -->
     <div class="footer-copyright text-center py-3">© 2020 Copyright:
@@ -338,8 +441,27 @@ window.addEventListener('scroll',function()
     
  });
 </script>
-<!-------------------------------------------------------------------------------------------------->
-  
+<!------------------------------------------Register Form Js-------------------------------------------------------->
+<script>
+  // Example starter JavaScript for disabling form submissions if there are invalid fields
+  (function() {
+    'use strict';
+    window.addEventListener('load', function() {
+      // Fetch all the forms we want to apply custom Bootstrap validation styles to
+      var forms = document.getElementsByClassName('needs-validation');
+      // Loop over them and prevent submission
+      var validation = Array.prototype.filter.call(forms, function(form) {
+        form.addEventListener('submit', function(event) {
+          if (form.checkValidity() === false) {
+            event.preventDefault();
+            event.stopPropagation();
+          }
+          form.classList.add('was-validated');
+        }, false);
+      });
+    }, false);
+  })();
+  </script>
 
      <!---------------------------------------------->
   
