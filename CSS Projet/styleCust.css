@@ -34,6 +34,7 @@ display: block;
     display: block;
     padding: 15px;
     background-color: black;
+    
 }
 #l1{
     color: white;
@@ -129,102 +130,67 @@ header.sticky .logo{
 }
 header.sticky .navigation li a{
     color: #111;
+    font-weight: bold;
 }
 header.sticky .navigation li a:hover{
     color: #ff0157;
 }
-/*Title Text*/
-.title-text{
-    color: #111;
-    font-size: 2em;
-    font-weight: 300;
-    text-align: center;
+/*section*/
+section{
+    padding: 100px;
 }
-.title-text span{
-    color: #ff0157;
-    font-weight: 700;
-    font-size: 1.5em;
-}
- /*footer*/
- .page-footer{
-    background-color: black;
-    color: white;
-}
-.page-footer a{
-    color: white;
-}
-#desc-footer{
-    color: white;
-    text-align: justify;
-}
-/*cards*/
-.card img{
-    height:200px;
-    width:100%;
+
+
+/*tabs*/
+
+nav > .nav.nav-tabs{
+
+    border: none;
+      color:#fff;
+      background:#272e38;
+      border-radius:0;
+  
+  }
+  nav > div a.nav-item.nav-link,
+  nav > div a.nav-item.nav-link.active
+  {
+    border: none;
+      padding: 18px 25px;
+      color:#fff;
+      background:#272e38;
+      border-radius:0;
   }
   
-  div [class^="col-"]{
-    padding-left:5px;
-    padding-right:5px;
+  nav > div a.nav-item.nav-link.active:after
+   {
+    content: "";
+    position: relative;
+    bottom: -60px;
+    left: -10%;
+    border: 15px solid transparent;
+    border-top-color: #ff0157 ;
   }
-  .card{
-    transition:0.5s;
-    cursor:pointer;
-  }
-  .card-title{  
-    font-size:15px;
-    transition:1s;
-    cursor:pointer;
-  }
-  .card-title i{  
-    font-size:15px;
-    transition:1s;
-    cursor:pointer;
-    color:#ffa710
-  }
-  .card-title i:hover{
-    transform: scale(1.25) rotate(100deg); 
-    color:#18d4ca;
-    
-  }
-  .card:hover{
-    transform: scale(1.05);
-    box-shadow: 10px 10px 15px rgba(0,0,0,0.3);
-  }
-  .card-text{
-    height:80px;  
+  .tab-content{
+    background: #fdfdfd;
+      line-height: 25px;
+      border: 1px solid #ddd;
+      border-top:5px solid #ff0157;
+      border-bottom:5px solid #ff0157;
+      padding:30px 25px;
   }
   
-  .card::before, .card::after {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    transform: scale3d(0, 0, 1);
-    transition: transform .3s ease-out 0s;
-    background: rgba(255, 255, 255, 0.1);
-    content: '';
-    pointer-events: none;
+  nav > div a.nav-item.nav-link:hover,
+  nav > div a.nav-item.nav-link:focus
+  {
+    border: none;
+      background: #ff0157;
+      color:#fff;
+      border-radius:0;
+      transition:background 0.20s linear;
   }
-  .card::before {
-    transform-origin: left top;
+  section{
+      padding: 150px;
   }
-  .card::after {
-    transform-origin: right bottom;
+  #tentacles{
+     border-color: #ff0157;
   }
-  .card:hover::before, .card:hover::after, .card:focus::before, .card:focus::after {
-    transform: scale3d(1, 1, 1);
-  }
-  /*Title Category*/
-  .title-filtre{
-    color: #111;
-    font-size: 1em;
-    font-weight: 100;
-  
-}
-.title-filtre span{
-    color: #ff0157;
-    font-weight: 700;
-    font-size: 1.5em;
-}

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customized Page</title>
+     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/CSS Projet/styleCust.css">
+</head>
+<body>
+<!------------------------------Navbar---------------------------->        
+    <header class="sticky">
+        <a href="#" class="logo">Ruyuu Print</a>
+        <ul class="navigation">
+           <li><a href="">Home</a></li>
+           <li><a href="">About Us</a></li>
+           <li><a href="">Customized</a></li>
+           <li>
+               <a href="">Shop</a>
+               <ul class="drop-down-menu">
+                <li><a  id="l1" href="">Notebook</a> </li>
+                <li><a id="l1" href="">Mug</a></li>
+                <li><a id="l1" href="">Pack Mutchy</a></li>
+            </ul>
+            </li>
+           <li><a href=""><img src="https://img.icons8.com/windows/32/000000/shopping-basket-2.png"/></a></li>
+           <li><a href="">Contact</a></li>
+        </ul>      
+        </header>
+ <section>
+    <div class="container">
+        <div class="row">
+          <div class="col-xs-12 ">
+            <nav>
+              <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+                <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Home</a>
+                <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Profile</a>
+                <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Contact</a>
+                <a class="nav-item nav-link" id="nav-about-tab" data-toggle="tab" href="#nav-about" role="tab" aria-controls="nav-about" aria-selected="false">About</a>
+              </div>
+            </nav>
+            <div class="tab-content py-3 px-3 px-sm-0" id="nav-tabContent">
+              <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                <div class="row">
+                    <div class="col-md-6"><br>
+                        <form action="" >
+                         
+                            <label for="favcolor" class="text-dark font-weight-bold">Select your favorite color:</label>
+                            <input type="color" id="favcolor" name="favcolor" value="#ff0000"><br><br>
+                        
+                <label for="tentacles" class="font-weight-bold">Quantity</label>
+                <input type="number" id="tentacles" name="tentacles" placeholder="Quantity" min="10" max="100" class="w-50"><br>  
+ <!-- Button trigger modal -->
+ <div class="d-flex justify-content-around py-5">
+<button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#m1">
+   Product info
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="m1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-------------------------------------------2éme modal---------------------------------------->
+ <!-- Button trigger modal -->
+ <button type="button" class="btn btn-secondary " data-toggle="modal" data-target="#m2">
+   Size Gide
+   </button>
+   
+   <!-- Modal -->
+   <div class="modal fade" id="m2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+     <div class="modal-dialog modal-dialog-centered" role="document">
+       <div class="modal-content">
+         <div class="modal-header">
+           <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+             <span aria-hidden="true">&times;</span>
+           </button>
+         </div>
+         <div class="modal-body">
+           ...
+         </div>
+         <div class="modal-footer">
+           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+           <button type="button" class="btn btn-primary">Save changes</button>
+         </div>
+       </div>
+     </div>
+   </div>
+</div><!---big div de modal------>
+ </form>
+
+                    </div>
+                    <div class="col-md-6">
+                        <img src="/Photos/home/mug blanc.jpeg" class="img-thumbnail" alt="">
+                    </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                         <form action="">
+                            <nav class="navbar navbar-light bg-light">
+                                <form class="form-inline">
+                                  <input class="form-control mr-sm-2 w-50" type="search" placeholder="Search" aria-label="Search">
+                                  <button class="btn btn-outline-secondary my-2 my-sm-0" type="submit">Search</button>
+                                </form>
+                              </nav>
+                         </form>
+                        </div>
+                        <div class="col-md-6">
+                            <img src="/Photos/home/mug blanc.jpeg" class="img-thumbnail" alt=""> 
+                        </div>
+                    </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+                Et et consectetur ipsum labore excepteur est proident excepteur ad velit occaecat qui minim occaecat veniam. Fugiat veniam incididunt anim aliqua enim pariatur veniam sunt est aute sit dolor anim. Velit non irure adipisicing aliqua ullamco irure incididunt irure non esse consectetur nostrud minim non minim occaecat. Amet duis do nisi duis veniam non est eiusmod tempor incididunt tempor dolor ipsum in qui sit. Exercitation mollit sit culpa nisi culpa non adipisicing reprehenderit do dolore. Duis reprehenderit occaecat anim ullamco ad duis occaecat ex.
+              </div>
+              <div class="tab-pane fade" id="nav-about" role="tabpanel" aria-labelledby="nav-about-tab">
+                Et et consectetur ipsum labore excepteur est proident excepteur ad velit occaecat qui minim occaecat veniam. Fugiat veniam incididunt anim aliqua enim pariatur veniam sunt est aute sit dolor anim. Velit non irure adipisicing aliqua ullamco irure incididunt irure non esse consectetur nostrud minim non minim occaecat. Amet duis do nisi duis veniam non est eiusmod tempor incididunt tempor dolor ipsum in qui sit. Exercitation mollit sit culpa nisi culpa non adipisicing reprehenderit do dolore. Duis reprehenderit occaecat anim ullamco ad duis occaecat ex.
+              </div>
+            </div>
+          
+          </div>
+        </div>
+  </div>
+</div>
+</div>
+
+
+
+
+
+
+<!-----
+    <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item">
+          <a class="nav-link font-weight-bold" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link font-weight-bold" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Profile</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link font-weight-bold" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Contact</a>
+        </li>
+      </ul>
+      <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+            <div class="row">
+                <div class="col-md-6">
+                  
+                </div>
+                <div class="col-md-6">
+                    <img src="/Photos/home/4.jpg" w-50 alt="">
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">...</div>
+        <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">...</div>
+      </div>
+      -->
+ </section>
+</body>
+</html>
