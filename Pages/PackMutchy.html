@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shop Page</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">               
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
@@ -11,26 +14,26 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
- <link rel="stylesheet" href="/CSS Projet/styleP.css">
+   <link rel="stylesheet" href="/CSS Projet/styleN.css">
 </head>
 <body>
 <!--------------------------------------------Nav------------------------------------------------------>    
     <header class="sticky">
         <a href="#" class="logo">Ruyuu Print</a>
         <ul class="navigation">
-           <li><a href="">Home</a></li>
+           <li><a href="Home.html">Home</a></li>
            <li><a href="">About Us</a></li>
-           <li><a href="">Customized</a></li>
+           <li><a href="Customized.html">Customized</a></li>
            <li>
-               <a href="">Shop</a>
+               <a href="Shop.html">Shop</a>
                <ul class="drop-down-menu">
-                <li><a  id="l1" href="">Notebook</a> </li>
-                <li><a id="l1" href="">Mug</a></li>
-                <li><a id="l1" href="">Pack Mutchy</a></li>
+                <li><a  id="l1" href="Notebook.html">Notebook</a> </li>
+                <li><a id="l1" href="Mug.html">Mug</a></li>
+                <li><a id="l1" href="PackMutchy.html">Pack Mutchy</a></li>
             </ul>
             </li>
            <li><a href=""><img src="https://img.icons8.com/windows/32/000000/shopping-basket-2.png"/></a></li>
-           <li><a href="">Contact</a></li>
+           <li><a href="contact.html">Contact</a></li>
         </ul>      
         </header>
         <!-------------------------------------------Background image+Slogan+button--------------------------------------------------------->
@@ -42,365 +45,399 @@
             
             </div>
         </section>  
-        <!-------------------------------------------------Notebook section-------------------------------------------->
-        <section>
-        <div class="container mt-2">
-          
-  
-                <div class="col-md-12">
-                    <h2 class="title-text"><span>P</span>ack <span>M</span>atchy</h2>
+<!-------------------------------------------------Notebook section-------------------------------------------->
+       
 
-            <div class="row">
-                <div class="col-md-3 col-sm-6">
-                  <div class="card card-block">
-                 
-                <img src="/Photos/home/7.jpg" alt="Photo of sunset">
-                    <h5 class="card-title mt-3 mb-3">Sierra Web Development • Owner</h5>
-                    <p class="card-text">This is a company that builds websites, web apps and e-commerce solutions.</p> 
-              </div>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                  <div class="card card-block">
-                 
-                <img src="/Photos/home/8.jpg" alt="Photo of sunset">
-                    <h5 class="card-title  mt-3 mb-3">ProVyuh</h5>
-                    <p class="card-text">This is a company that builds websites, web .</p> 
-              </div>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                  <div class="card card-block">
-                
-                <img src="/Photos/home/9.jpg" alt="Photo of sunset">
-                    <h5 class="card-title  mt-3 mb-3">ProVyuh</h5>
-                    <p class="card-text">This is a company that builds websites, web apps and e-commerce solutions.</p> 
-              </div>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                  <div class="card card-block">
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6 col-lg-4"> 
+        <div class="single-publication">
+            <figure>
+                <a href="#">
+                    <img src="/Photos/mug/m1.jpg" width="263px" height="250" alt="Publication Image">
+                </a>
+
+                <ul>
+                    <li><a href="#" title="Add to Favorite"><i class="fa fa-heart"></i></a></li>
+                    <li><a href="#" title="Add to Compare"><i class="fa fa-refresh"></i></a></li>
+                    <li><a href="#" title="Quick View" data-toggle="modal" data-target="#exampleModalCenter"><i class="fa fa-search"></i></a>
+                     <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                       <div class="modal-dialog modal-dialog-centered" role="document">
+                         <div class="modal-content">
+                           <div class="modal-header">
+                             <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                               <span aria-hidden="true">&times;</span>
+                             </button>
+                           </div>
+                           <div class="modal-body">
+                             ...
+                           </div>
+                           <div class="modal-footer">
+                             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                             <button type="button" class="btn btn-primary">Save changes</button>
+                           </div>
+                         </div>
+                       </div>
+                     </div>
+                   </li>
+
+                </ul>
                
-                <img src="/Photos/home/3.jpg" alt="Photo of sunset">
-                    <h5 class="card-title  mt-3 mb-3">ProVyuh</h5>
-                    <p class="card-text">This is a company that builds websites, web apps and e-commerce solutions.</p> 
-              </div>
-                </div>    
-              </div>
+            </figure>
+
+            <div class="publication-content">
+                <span class="category">Girly</span>
+                <h3><a href="#">Mug</a></h3>
+                <ul>
+                    <li><i class="icofont-star"></i></li>
+                    <li><i class="icofont-star"></i></li>
+                    <li><i class="icofont-star"></i></li>
+                    <li><i class="icofont-star"></i></li>
+                    <li><i class="icofont-star"></i></li>
+                </ul>
+                <h4 class="price">12d</h4>
             </div>
+
+            <div class="add-to-cart">
+                <a href="#" class="default-btn">Add to Cart</a>
             </div>
-              
-            </div>
-<!--------------------------------------------------------------------------------------------------->
-<div class="container mt-2">
-    <div class="row">
-      <div class="col-md-12">
-          
-  <div class="row">
-      <div class="col-md-3 col-sm-6">
-        <div class="card card-block">
-       
-      <img src="/Photos/home/7.jpg" alt="Photo of sunset">
-          <h5 class="card-title mt-3 mb-3">Sierra Web Development • Owner</h5>
-          <p class="card-text">This is a company that builds websites, web apps and e-commerce solutions.</p> 
+        </div>
     </div>
-      </div>
-      <div class="col-md-3 col-sm-6">
-        <div class="card card-block">
-       
-      <img src="/Photos/home/8.jpg" alt="Photo of sunset">
-          <h5 class="card-title  mt-3 mb-3">ProVyuh</h5>
-          <p class="card-text">This is a company that builds websites, web .</p> 
-    </div>
-      </div>
-      <div class="col-md-3 col-sm-6">
-        <div class="card card-block">
-      
-      <img src="/Photos/home/9.jpg" alt="Photo of sunset">
-          <h5 class="card-title  mt-3 mb-3">ProVyuh</h5>
-          <p class="card-text">This is a company that builds websites, web apps and e-commerce solutions.</p> 
-    </div>
-      </div>
-      <div class="col-md-3 col-sm-6">
-        <div class="card card-block">
-     
-      <img src="/Photos/home/3.jpg" alt="Photo of sunset">
-          <h5 class="card-title  mt-3 mb-3">ProVyuh</h5>
-          <p class="card-text">This is a company that builds websites, web apps and e-commerce solutions.</p> 
-    </div>
-      </div>    
-    </div>
-  </div>
-  </div>
     
-  </div>
+    <div class="col-sm-6 col-lg-4"> 
+        <div class="single-publication">
+            <figure>
+             <img src="/Photos/pack mutchy/mt1.jpg" width="263px" height="250" alt="Publication Image">
 
-<!------------------------------------------------Mug Section---------------------------------------------------->
+                <ul>
+                    <li><a href="#" title="Add to Favorite"><i class="fa fa-heart"></i></a></li>
+                    <li><a href="#" title="Add to Compare"><i class="fa fa-refresh"></i></a></li>
+                    <li><a href="#" title="Quick View" data-toggle="modal" data-target="#exampleModalCenter"><i class="fa fa-search"></i></a>
+                     <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                       <div class="modal-dialog modal-dialog-centered" role="document">
+                         <div class="modal-content">
+                           <div class="modal-header">
+                             <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                               <span aria-hidden="true">&times;</span>
+                             </button>
+                           </div>
+                           <div class="modal-body">
+                             ...
+                           </div>
+                           <div class="modal-footer">
+                             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                             <button type="button" class="btn btn-primary">Save changes</button>
+                           </div>
+                         </div>
+                       </div>
+                     </div>
+                   </li>
 
-<div class="container mt-2">
-    <div class="row">
-      <div class="col-md-12">
-
-  <div class="row">
-      <div class="col-md-3 col-sm-6">
-        <div class="card card-block">
-       
-      <img src="/Photos/home/7.jpg" alt="Photo of sunset">
-          <h5 class="card-title mt-3 mb-3">Sierra Web Development • Owner</h5>
-          <p class="card-text">This is a company that builds websites, web apps and e-commerce solutions.</p> 
-    </div>
-      </div>
-      <div class="col-md-3 col-sm-6">
-        <div class="card card-block">
-       
-      <img src="/Photos/home/8.jpg" alt="Photo of sunset">
-          <h5 class="card-title  mt-3 mb-3">ProVyuh</h5>
-          <p class="card-text">This is a company that builds websites, web .</p> 
-    </div>
-      </div>
-      <div class="col-md-3 col-sm-6">
-        <div class="card card-block">
-      
-      <img src="/Photos/home/9.jpg" alt="Photo of sunset">
-          <h5 class="card-title  mt-3 mb-3">ProVyuh</h5>
-          <p class="card-text">This is a company that builds websites, web apps and e-commerce solutions.</p> 
-    </div>
-      </div>
-      <div class="col-md-3 col-sm-6">
-        <div class="card card-block">
-     
-      <img src="/Photos/home/3.jpg" alt="Photo of sunset">
-          <h5 class="card-title  mt-3 mb-3">ProVyuh</h5>
-          <p class="card-text">This is a company that builds websites, web apps and e-commerce solutions.</p> 
-    </div>
-      </div>    
-    </div>
-  </div>
-  </div>
-    
-  </div>
-  <!---------------------------------------------------------------------------------------------->
-  <div class="container mt-2">
-    <div class="row">
-      <div class="col-md-12">
-
-  <div class="row">
-      <div class="col-md-3 col-sm-6">
-        <div class="card card-block">
-       
-      <img src="/Photos/home/7.jpg" alt="Photo of sunset">
-          <h5 class="card-title mt-3 mb-3">Sierra Web Development • Owner</h5>
-          <p class="card-text">This is a company that builds websites, web apps and e-commerce solutions.</p> 
-    </div>
-      </div>
-      <div class="col-md-3 col-sm-6">
-        <div class="card card-block">
-       
-      <img src="/Photos/home/8.jpg" alt="Photo of sunset">
-          <h5 class="card-title  mt-3 mb-3">ProVyuh</h5>
-          <p class="card-text">This is a company that builds websites, web .</p> 
-    </div>
-      </div>
-      <div class="col-md-3 col-sm-6">
-        <div class="card card-block">
-      
-      <img src="/Photos/home/9.jpg" alt="Photo of sunset">
-          <h5 class="card-title  mt-3 mb-3">ProVyuh</h5>
-          <p class="card-text">This is a company that builds websites, web apps and e-commerce solutions.</p> 
-    </div>
-      </div>
-      <div class="col-md-3 col-sm-6">
-        <div class="card card-block">
-     
-      <img src="/Photos/home/3.jpg" alt="Photo of sunset">
-          <h5 class="card-title  mt-3 mb-3">ProVyuh</h5>
-          <p class="card-text">This is a company that builds websites, web apps and e-commerce solutions.</p> 
-    </div>
-      </div>    
-    </div>
-  </div>
-  </div>
-    
-  </div>
- 
-<!----------------------------------------------Pack Matchy Section------------------------------------------------------>       
-
-    <div class="container mt-2">
-          <div class="row">
-            <div class="col-md-12">
-
-        <div class="row">
-            <div class="col-md-3 col-sm-6">
-              <div class="card card-block">
-             
-            <img src="/Photos/home/7.jpg" alt="Photo of sunset">
-                <h5 class="card-title mt-3 mb-3">Sierra Web Development • Owner</h5>
-                <p class="card-text">This is a company that builds websites, web apps and e-commerce solutions.</p> 
-          </div>
-            </div>
-            <div class="col-md-3 col-sm-6">
-              <div class="card card-block">
-             
-            <img src="/Photos/home/8.jpg" alt="Photo of sunset">
-                <h5 class="card-title  mt-3 mb-3">ProVyuh</h5>
-                <p class="card-text">This is a company that builds websites, web .</p> 
-          </div>
-            </div>
-            <div class="col-md-3 col-sm-6">
-              <div class="card card-block">
+                </ul>                         
+            </figure>
             
-            <img src="/Photos/home/9.jpg" alt="Photo of sunset">
-                <h5 class="card-title  mt-3 mb-3">ProVyuh</h5>
-                <p class="card-text">This is a company that builds websites, web apps and e-commerce solutions.</p> 
-          </div>
+
+            <div class="publication-content">
+                <span class="category">Tv show</span>
+                <h3><a href="#">Pack Mutchy</a></h3>
+                <ul>
+                    <li><i class="icofont-star"></i></li>
+                    <li><i class="icofont-star"></i></li>
+                    <li><i class="icofont-star"></i></li>
+                    <li><i class="icofont-star"></i></li>
+                    <li><i class="icofont-star"></i></li>
+                </ul>
+                <h4 class="price">30d</h4>
             </div>
-            <div class="col-md-3 col-sm-6">
-              <div class="card card-block">
+
+            <div class="add-to-cart">
+                <a href="#" class="default-btn">Add to Cart</a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-sm-6 col-lg-4"> 
+        <div class="single-publication">
+            <figure>
+             <img src="/Photos/notebook/n1.jpg "width="263px" height="250" alt="Publication Image">
+
+                <ul>
+                    <li><a href="#" title="Add to Favorite"><i class="fa fa-heart"></i></a></li>
+                    <li><a href="#" title="Add to Compare"><i class="fa fa-refresh"></i></a></li>
+                    <li><a href="#" title="Quick View" data-toggle="modal" data-target="#exampleModalCenter"><i class="fa fa-search"></i></a>
+                     <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                       <div class="modal-dialog modal-dialog-centered" role="document">
+                         <div class="modal-content">
+                           <div class="modal-header">
+                             <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                               <span aria-hidden="true">&times;</span>
+                             </button>
+                           </div>
+                           <div class="modal-body">
+                             ...
+                           </div>
+                           <div class="modal-footer">
+                             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                             <button type="button" class="btn btn-primary">Save changes</button>
+                           </div>
+                         </div>
+                       </div>
+                     </div>
+                   </li>
+
+                </ul>
+            </figure>
+
+            <div class="publication-content">
+                <span class="category">Girly</span>
+                <h3><a href="#">Notebook</a></h3>
+                <ul>
+                    <li><i class="icofont-star"></i></li>
+                    <li><i class="icofont-star"></i></li>
+                    <li><i class="icofont-star"></i></li>
+                    <li><i class="icofont-star"></i></li>
+                    <li><i class="icofont-star"></i></li>
+                </ul>
+                <h4 class="price">20d</h4>
+            </div>
+
+            <div class="add-to-cart">
+                <a href="#" class="default-btn">Add to Cart</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-------------------------------------2éme ligne------------------------------------------------>
+<div class="row">
+  <div class="col-sm-6 col-lg-4"> 
+    <div class="single-publication">
+        <figure>
+            <a href="#">
+                <img src="/Photos/mug/m1.jpg" width="263px" height="250" alt="Publication Image">
+            </a>
+
+            <ul>
+                <li><a href="#" title="Add to Favorite"><i class="fa fa-heart"></i></a></li>
+                <li><a href="#" title="Add to Compare"><i class="fa fa-refresh"></i></a></li>
+                <li><a href="#" title="Quick View" data-toggle="modal" data-target="#exampleModalCenter"><i class="fa fa-search"></i></a>
+                 <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                   <div class="modal-dialog modal-dialog-centered" role="document">
+                     <div class="modal-content">
+                       <div class="modal-header">
+                         <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                           <span aria-hidden="true">&times;</span>
+                         </button>
+                       </div>
+                       <div class="modal-body">
+                         ...
+                       </div>
+                       <div class="modal-footer">
+                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                         <button type="button" class="btn btn-primary">Save changes</button>
+                       </div>
+                     </div>
+                   </div>
+                 </div>
+               </li>
+
+            </ul>
            
-            <img src="/Photos/home/3.jpg" alt="Photo of sunset">
-                <h5 class="card-title  mt-3 mb-3">ProVyuh</h5>
-                <p class="card-text">This is a company that builds websites, web apps and e-commerce solutions.</p> 
-          </div>
-            </div>    
-          </div>
+        </figure>
+
+        <div class="publication-content">
+            <span class="category">Girly</span>
+            <h3><a href="#">Mug</a></h3>
+            <ul>
+                <li><i class="icofont-star"></i></li>
+                <li><i class="icofont-star"></i></li>
+                <li><i class="icofont-star"></i></li>
+                <li><i class="icofont-star"></i></li>
+                <li><i class="icofont-star"></i></li>
+            </ul>
+            <h4 class="price">12d</h4>
         </div>
+
+        <div class="add-to-cart">
+            <a href="#" class="default-btn">Add to Cart</a>
         </div>
-          
-        </div>
-<!--------------------------------------------------------------------------------------------------->
-<div class="container mt-2">
-<div class="row">
-  <div class="col-md-12">
-      
-<div class="row">
-  <div class="col-md-3 col-sm-6">
-    <div class="card card-block">
-   
-  <img src="/Photos/home/7.jpg" alt="Photo of sunset">
-      <h5 class="card-title mt-3 mb-3">Sierra Web Development • Owner</h5>
-      <p class="card-text">This is a company that builds websites, web apps and e-commerce solutions.</p> 
-</div>
-  </div>
-  <div class="col-md-3 col-sm-6">
-    <div class="card card-block">
-   
-  <img src="/Photos/home/8.jpg" alt="Photo of sunset">
-      <h5 class="card-title  mt-3 mb-3">ProVyuh</h5>
-      <p class="card-text">This is a company that builds websites, web .</p> 
-</div>
-  </div>
-  <div class="col-md-3 col-sm-6">
-    <div class="card card-block">
-  
-  <img src="/Photos/home/9.jpg" alt="Photo of sunset">
-      <h5 class="card-title  mt-3 mb-3">ProVyuh</h5>
-      <p class="card-text">This is a company that builds websites, web apps and e-commerce solutions.</p> 
-</div>
-  </div>
-  <div class="col-md-3 col-sm-6">
-    <div class="card card-block">
- 
-  <img src="/Photos/home/3.jpg" alt="Photo of sunset">
-      <h5 class="card-title  mt-3 mb-3">ProVyuh</h5>
-      <p class="card-text">This is a company that builds websites, web apps and e-commerce solutions.</p> 
-</div>
-  </div>    
-</div>
-</div>
+    </div>
 </div>
 
+<div class="col-sm-6 col-lg-4"> 
+    <div class="single-publication">
+        <figure>
+         <img src="/Photos/pack mutchy/mt1.jpg" width="263px" height="250" alt="Publication Image">
+
+            <ul>
+                <li><a href="#" title="Add to Favorite"><i class="fa fa-heart"></i></a></li>
+                <li><a href="#" title="Add to Compare"><i class="fa fa-refresh"></i></a></li>
+                <li><a href="#" title="Quick View" data-toggle="modal" data-target="#exampleModalCenter"><i class="fa fa-search"></i></a>
+                 <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                   <div class="modal-dialog modal-dialog-centered" role="document">
+                     <div class="modal-content">
+                       <div class="modal-header">
+                         <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                           <span aria-hidden="true">&times;</span>
+                         </button>
+                       </div>
+                       <div class="modal-body">
+                         ...
+                       </div>
+                       <div class="modal-footer">
+                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                         <button type="button" class="btn btn-primary">Save changes</button>
+                       </div>
+                     </div>
+                   </div>
+                 </div>
+               </li>
+
+            </ul>                         
+        </figure>
+        
+
+        <div class="publication-content">
+            <span class="category">Tv show</span>
+            <h3><a href="#">Pack Mutchy</a></h3>
+            <ul>
+                <li><i class="icofont-star"></i></li>
+                <li><i class="icofont-star"></i></li>
+                <li><i class="icofont-star"></i></li>
+                <li><i class="icofont-star"></i></li>
+                <li><i class="icofont-star"></i></li>
+            </ul>
+            <h4 class="price">30d</h4>
+        </div>
+
+        <div class="add-to-cart">
+            <a href="#" class="default-btn">Add to Cart</a>
+        </div>
+    </div>
 </div>
 
-</section>    
- 
-  <!-- ---------------------------------------------------Footer ---------------------------------------------------------------------------->
+<div class="col-sm-6 col-lg-4"> 
+    <div class="single-publication">
+        <figure>
+         <img src="/Photos/notebook/n1.jpg "width="263px" height="250" alt="Publication Image">
+
+            <ul>
+                <li><a href="#" title="Add to Favorite"><i class="fa fa-heart"></i></a></li>
+                <li><a href="#" title="Add to Compare"><i class="fa fa-refresh"></i></a></li>
+                <li><a href="#" title="Quick View" data-toggle="modal" data-target="#exampleModalCenter"><i class="fa fa-search"></i></a>
+                 <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                   <div class="modal-dialog modal-dialog-centered" role="document">
+                     <div class="modal-content">
+                       <div class="modal-header">
+                         <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                           <span aria-hidden="true">&times;</span>
+                         </button>
+                       </div>
+                       <div class="modal-body">
+                         ...
+                       </div>
+                       <div class="modal-footer">
+                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                         <button type="button" class="btn btn-primary">Save changes</button>
+                       </div>
+                     </div>
+                   </div>
+                 </div>
+               </li>
+
+            </ul>
+        </figure>
+
+        <div class="publication-content">
+            <span class="category">Girly</span>
+            <h3><a href="#">Notebook</a></h3>
+            <ul>
+                <li><i class="icofont-star"></i></li>
+                <li><i class="icofont-star"></i></li>
+                <li><i class="icofont-star"></i></li>
+                <li><i class="icofont-star"></i></li>
+                <li><i class="icofont-star"></i></li>
+            </ul>
+            <h4 class="price">20d</h4>
+        </div>
+
+        <div class="add-to-cart">
+            <a href="#" class="default-btn">Add to Cart</a>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+    </div>
+  </div>
+</section>
+
 
   <!-- Footer -->
+   <!---------------------- ----------------------Footer----------------------------------------------- -->
 
 <footer class="page-footer font-small  pt-4">
   
-    <!-- Footer Links -->
-    <div class="container-fluid text-center text-md-left">
-  
-      <!-- Grid row -->
-      <div class="row">
-  
-        <!-- Grid column -->
-        <div class="col-md-6 mt-md-0 mt-3">
-  
-          <!-- Content -->
-          <h5 class="text-uppercase text-danger">Ruyuu Print</h5>
-          <span id="desc-footer"> Ruyuu Print offers you a whole bunch of personalized objects: 
-                 mugs, key ings, plant pots, notebooks.
-                You can select colors and formats.</span>
-  
-        </div>
-        <!-- Grid column -->
-  
-        <hr class="clearfix w-100 d-md-none pb-3">
-  
-        <!-- Grid column -->
-        <div class="col-md-3 mb-md-0 mb-3">
-  
-          <!-- Links -->
-          <h5 class="text-uppercase text-danger">Quik Links</h5>
-  
-          <ul class="list-unstyled">
-            <li>
-              <a href="">Home</a>
-            </li>
-            <li>
-              <a href="">About Us</a>
-            </li>
-            <li>
-              <a href="#!">Customized</a>
-            </li>
-            <li>
-              <a href="#!">Shop</a>
-                
-            </li>
+  <!-- Footer Links -->
+  <div class="container-fluid text-center text-md-left">
 
-            </li>
-          </ul>
-  
-        </div>
-        <a href="https://icons8.com/icon/47751/email"></a>
-  
-        <!-- Grid column -->
-  
-        <!-- Grid column -->
-        <div class="col-md-3 mb-md-0 mb-3">
-  
-          <!-- Links -->
-          <h5 class="text-uppercase text-danger">Links</h5>
-          <ul class="list-unstyled">
-            <li>
-              <img src="https://img.icons8.com/carbon-copy/64/000000/email.png"/>        </li>
-            <li>
-               <i class="far fa-envelope"></i>
-  
-            </li>
-            <li>
-            </li>
-            <li>
-              <a href="#!">Link 4</a>
-            </li>
-          </ul>
-  
-        </div>
-        <!-- Grid column -->
-  
+
+    <div class="row">
+
+      <div class="col-md-6 mt-md-0 mt-3">
+
+        <!-- Description ------------------------------------------>
+        <h5 class="text-uppercase text-danger">Ruyuu Print</h5>
+        <span id="desc-footer"> Ruyuu Print offers you a whole bunch of personalized objects: 
+               mugs, key ings, plant pots, notebooks.
+              You can select colors and formats.</span>
+
       </div>
-      <!-- Grid row -->
-  
-    </div>
-    <!-- Footer Links -->
-  
-    <!-- Copyright -->
-    <div class="footer-copyright text-center py-3">© 2020 Copyright:
-      <a href="https://mdbootstrap.com/">Ruyuu Print</a>
-    </div>
-    <!-- Copyright -->
+     
 
-  </footer>
-  <!-- Footer -->
+  <hr class="clearfix w-100 d-md-none pb-3">
+
+  <div class="col-md-3 mb-md-0 mb-3">
+
+    <!-----------------------Quik Links--------------------- -->
+        <h5 class="text-uppercase text-danger">Quik Links</h5>
+        <a href="/Pages/Home.html">Home</a><br>
+        <a href="#about">About Us</a><br>
+        <a href="/Pages/Customized.html">Customized</a><br>
+        <a href="/Pages/Shop.html">Shop</a><br>
+        <a href="/Pages/Notebook.html">Notebook</a><br>
+        <a href="/Pages/Mug.html">Mug</a><br>
+        <a href="">Cart</a><br>
+        <a href="">Contact</a><br>
+  </div>
+     <!--------------------------Conatct Icons------------------------>
+      <div class="col-md-3 mb-md-0 mb-3">
+        <h5 class="text-uppercase text-danger">Contact</h5>
+        <ul class="social_footer_ul list-unstyled">
+          <li><a href="http://webenlance.com"><i class="fab fa-facebook-f"></i></a></li>
+          <li><a href="http://webenlance.com"><i class="fab fa-twitter"></i></a></li>
+          <li><a href="http://webenlance.com"><i class="fab fa-linkedin"></i></a></li>
+          <li><a href="http://webenlance.com"><i class="fab fa-instagram"></i></a></li>
+          </ul>
+      </div>
+
+  </div>
+ 
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© 2020 Copyright:
+    <a href="https://mdbootstrap.com/">Ruyuu Print</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
 
  <!-----------------------------------------------Js Header----------------------------------------------------->
 <script type="text/javascript">

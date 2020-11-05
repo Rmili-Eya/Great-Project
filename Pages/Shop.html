@@ -20,19 +20,19 @@
     <header class="sticky">
         <a href="#" class="logo">Ruyuu Print</a>
         <ul class="navigation">
-           <li><a href="">Home</a></li>
+           <li><a href="Home.html">Home</a></li>
            <li><a href="">About Us</a></li>
-           <li><a href="">Customized</a></li>
+           <li><a href="contact.html">Customized</a></li>
            <li>
                <a href="">Shop</a>
                <ul class="drop-down-menu">
-                <li><a  id="l1" href="">Notebook</a> </li>
-                <li><a id="l1" href="">Mug</a></li>
-                <li><a id="l1" href="">Pack Mutchy</a></li>
+                <li><a  id="l1" href="Notebook.html">Notebook</a> </li>
+                <li><a id="l1" href="Mug.html">Mug</a></li>
+                <li><a id="l1" href="PackMutchy.html">Pack Mutchy</a></li>
             </ul>
             </li>
            <li><a href=""><img src="https://img.icons8.com/windows/32/000000/shopping-basket-2.png"/></a></li>
-           <li><a href="">Contact</a></li>
+           <li><a href="contact.html">Contact</a></li>
         </ul>      
         </header>
         <!-------------------------------------------Background image+Slogan+button--------------------------------------------------------->
@@ -108,8 +108,48 @@
                                  <ul>
                                      <li><a href="#" title="Add to Favorite"><i class="fa fa-heart"></i></a></li>
                                      <li><a href="#" title="Add to Compare"><i class="fa fa-refresh"></i></a></li>
-                                     <li><a href="#" title="Quick View"><i class="fa fa-search"></i></a></li>
+                                     <li><a href="#" title="Quick View" data-toggle="modal" data-target="#m1"><i class="fa fa-search"></i></a>
+                                      <div class="modal fade" id="m1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-centered" role="document">
+                                          <div class="modal-content">
+                                            <div class="modal-header">
+                                              <h5 class="modal-title font-weight-bold" id="exampleModalLongTitle">Start your day with a cup of coffe!</h5>
+                                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                              </button>
+                                            </div>
+                                            <div class="modal-body">
+                                              <div class="container-fluid p-0 m-0">
+                                              <div class="row d-flex justify-content-between w-100">
+                                                <div class="col-md-6">
+                                                 
+                                                  <img src="/Photos/mug/m1.jpg" width="240px" height="" 4alt="Publication Image">
+                                                   
+                                                </div>
+                                                <div class="col-md-6">
+                                                  <span class="font-weight-bold w-50">Available in <span  class="text-success font-weight-bold">Stock</span></span> <br><br>
+                                                  <label for="tentacles" class="font-weight-bold">Quantity</label>
+                                                  <input type="number" id="tentacles" name="tentacles" placeholder="Quantity" min="10" max="100" class="w-50"><br><br>
+                                                <button class="btn btn-secondary"><a href="cart.html"></a>Add To Cart</button>
+                                                </div>
+                                              </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                              <div class="btn-toolbar">
+                                                
+                                                <div class="btn-group">
+                                                    <a href="#" class="btn btn-inverse disabled"><i class="icon-white icon-trash"></i></a>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </li>
+
                                  </ul>
+                                
                              </figure>
  
                              <div class="publication-content">
@@ -122,7 +162,7 @@
                                      <li><i class="icofont-star"></i></li>
                                      <li><i class="icofont-star"></i></li>
                                  </ul>
-                                 <h4 class="price">$119</h4>
+                                 <h4 class="price">12d</h4>
                              </div>
  
                              <div class="add-to-cart">
@@ -139,9 +179,42 @@
                                  <ul>
                                      <li><a href="#" title="Add to Favorite"><i class="fa fa-heart"></i></a></li>
                                      <li><a href="#" title="Add to Compare"><i class="fa fa-refresh"></i></a></li>
-                                     <li><a href="#" title="Quick View"><i class="fa fa-search"></i></a></li>
-                                 </ul>
+                                     <li><a href="#" title="Quick View" data-toggle="modal" data-target="#exampleModalCenter"><i class="fa fa-search"></i></a>
+                                      <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-centered" role="document">
+                                          <div class="modal-content">
+                                            <div class="modal-header">
+                                              <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                              </button>
+                                            </div>
+                                            <div class="modal-body">
+                                              <div class="container-fluid p-0 m-0">
+                                                <div class="row d-flex justify-content-between w-100">
+                                                  <div class="col-md-6">
+                                                   
+                                                    <img src="/Photos/pack mutchy/mt1.jpg" width="240px" height="" 4alt="Publication Image">
+                                                     
+                                                  </div>
+                                                  <div class="col-md-6">
+                                                    <span class="font-weight-bold w-50">Available in <span  class="text-success font-weight-bold">Stock</span></span> <br><br>
+                                                    <label for="tentacles" class="font-weight-bold">Quantity</label>
+                                                    <input type="number" id="tentacles" name="tentacles" placeholder="Quantity" min="10" max="100" class="w-50"><br><br>
+                                                  <button class="btn btn-secondary"><a href="cart.html"></a>Add To Cart</button>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                         
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </li>
+
+                                 </ul>                         
                              </figure>
+                             
  
                              <div class="publication-content">
                                  <span class="category">Tv show</span>
@@ -153,7 +226,7 @@
                                      <li><i class="icofont-star"></i></li>
                                      <li><i class="icofont-star"></i></li>
                                  </ul>
-                                 <h4 class="price">$119</h4>
+                                 <h4 class="price">30d</h4>
                              </div>
  
                              <div class="add-to-cart">
@@ -170,7 +243,28 @@
                                  <ul>
                                      <li><a href="#" title="Add to Favorite"><i class="fa fa-heart"></i></a></li>
                                      <li><a href="#" title="Add to Compare"><i class="fa fa-refresh"></i></a></li>
-                                     <li><a href="#" title="Quick View"><i class="fa fa-search"></i></a></li>
+                                     <li><a href="#" title="Quick View" data-toggle="modal" data-target="#exampleModalCenter"><i class="fa fa-search"></i></a>
+                                      <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-centered" role="document">
+                                          <div class="modal-content">
+                                            <div class="modal-header">
+                                              <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                              </button>
+                                            </div>
+                                            <div class="modal-body">
+                                              ...
+                                            </div>
+                                            <div class="modal-footer">
+                                              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                              <button type="button" class="btn btn-primary">Save changes</button>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </li>
+
                                  </ul>
                              </figure>
  
@@ -184,7 +278,7 @@
                                      <li><i class="icofont-star"></i></li>
                                      <li><i class="icofont-star"></i></li>
                                  </ul>
-                                 <h4 class="price">$119</h4>
+                                 <h4 class="price">20d</h4>
                              </div>
  
                              <div class="add-to-cart">
@@ -207,7 +301,29 @@
                               <ul>
                                   <li><a href="#" title="Add to Favorite"><i class="fa fa-heart"></i></a></li>
                                   <li><a href="#" title="Add to Compare"><i class="fa fa-refresh"></i></a></li>
-                                  <li><a href="#" title="Quick View"><i class="fa fa-search"></i></a></li>
+                                  <li><a href="#" title="Quick View" data-toggle="modal" data-target="#exampleModalCenter"><i class="fa fa-search"></i></a>
+                                    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                      <div class="modal-dialog modal-dialog-centered" role="document">
+                                        <div class="modal-content">
+                                          <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                              <span aria-hidden="true">&times;</span>
+                                            </button>
+                                          </div>
+                                          <div class="modal-body">
+                                            ...
+                                          </div>
+                                          <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-primary">Save changes</button>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </li>
+
+
                               </ul>
                           </figure>
 
@@ -221,7 +337,7 @@
                                   <li><i class="icofont-star"></i></li>
                                   <li><i class="icofont-star"></i></li>
                               </ul>
-                              <h4 class="price">$119</h4>
+                              <h4 class="price">12d</h4>
                           </div>
 
                           <div class="add-to-cart">
@@ -238,7 +354,28 @@
                               <ul>
                                   <li><a href="#" title="Add to Favorite"><i class="fa fa-heart"></i></a></li>
                                   <li><a href="#" title="Add to Compare"><i class="fa fa-refresh"></i></a></li>
-                                  <li><a href="#" title="Quick View"><i class="fa fa-search"></i></a></li>
+                                  <li><a href="#" title="Quick View" data-toggle="modal" data-target="#exampleModalCenter"><i class="fa fa-search"></i></a>
+                                    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                      <div class="modal-dialog modal-dialog-centered" role="document">
+                                        <div class="modal-content">
+                                          <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                              <span aria-hidden="true">&times;</span>
+                                            </button>
+                                          </div>
+                                          <div class="modal-body">
+                                            ...
+                                          </div>
+                                          <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-primary">Save changes</button>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </li>
+
                               </ul>
                           </figure>
 
@@ -252,7 +389,7 @@
                                   <li><i class="icofont-star"></i></li>
                                   <li><i class="icofont-star"></i></li>
                               </ul>
-                              <h4 class="price">$119</h4>
+                              <h4 class="price">30d</h4>
                           </div>
 
                           <div class="add-to-cart">
@@ -269,8 +406,29 @@
                               <ul>
                                   <li><a href="#" title="Add to Favorite"><i class="fa fa-heart"></i></a></li>
                                   <li><a href="#" title="Add to Compare"><i class="fa fa-refresh"></i></a></li>
-                                  <li><a href="#" title="Quick View"><i class="fa fa-search"></i></a></li>
-                              </ul>
+                                  <li><a href="#" title="Quick View" data-toggle="modal" data-target="#exampleModalCenter"><i class="fa fa-search"></i></a>
+                                    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                      <div class="modal-dialog modal-dialog-centered" role="document">
+                                        <div class="modal-content">
+                                          <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                              <span aria-hidden="true">&times;</span>
+                                            </button>
+                                          </div>
+                                          <div class="modal-body">
+                                            ...
+                                          </div>
+                                          <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-primary">Save changes</button>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </li>
+
+                         </ul>
                           </figure>
 
                           <div class="publication-content">
@@ -283,7 +441,7 @@
                                   <li><i class="icofont-star"></i></li>
                                   <li><i class="icofont-star"></i></li>
                               </ul>
-                              <h4 class="price">$119</h4>
+                              <h4 class="price">20d</h4>
                           </div>
 
                           <div class="add-to-cart">
@@ -305,7 +463,28 @@
               <ul>
                   <li><a href="#" title="Add to Favorite"><i class="fa fa-heart"></i></a></li>
                   <li><a href="#" title="Add to Compare"><i class="fa fa-refresh"></i></a></li>
-                  <li><a href="#" title="Quick View"><i class="fa fa-search"></i></a></li>
+                  <li><a href="#" title="Quick View" data-toggle="modal" data-target="#exampleModalCenter"><i class="fa fa-search"></i></a>
+                    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                      <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            ...
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+
               </ul>
           </figure>
 
@@ -319,7 +498,7 @@
                   <li><i class="icofont-star"></i></li>
                   <li><i class="icofont-star"></i></li>
               </ul>
-              <h4 class="price">$119</h4>
+              <h4 class="price">12d</h4>
           </div>
 
           <div class="add-to-cart">
@@ -336,8 +515,28 @@
               <ul>
                   <li><a href="#" title="Add to Favorite"><i class="fa fa-heart"></i></a></li>
                   <li><a href="#" title="Add to Compare"><i class="fa fa-refresh"></i></a></li>
-                  <li><a href="#" title="Quick View"><i class="fa fa-search"></i></a></li>
-              </ul>
+                  <li><a href="#" title="Quick View" data-toggle="modal" data-target="#exampleModalCenter"><i class="fa fa-search"></i></a>
+                    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                      <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            ...
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+</ul>
           </figure>
 
           <div class="publication-content">
@@ -350,7 +549,7 @@
                   <li><i class="icofont-star"></i></li>
                   <li><i class="icofont-star"></i></li>
               </ul>
-              <h4 class="price">$119</h4>
+              <h4 class="price">30d</h4>
           </div>
 
           <div class="add-to-cart">
@@ -367,8 +566,29 @@
               <ul>
                   <li><a href="#" title="Add to Favorite"><i class="fa fa-heart"></i></a></li>
                   <li><a href="#" title="Add to Compare"><i class="fa fa-refresh"></i></a></li>
-                  <li><a href="#" title="Quick View"><i class="fa fa-search"></i></a></li>
-              </ul>
+                  <li><a href="#" title="Quick View" data-toggle="modal" data-target="#exampleModalCenter"><i class="fa fa-search"></i></a>
+                    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                      <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            ...
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+
+         </ul>
           </figure>
 
           <div class="publication-content">
@@ -381,7 +601,7 @@
                   <li><i class="icofont-star"></i></li>
                   <li><i class="icofont-star"></i></li>
               </ul>
-              <h4 class="price">$119</h4>
+              <h4 class="price">20d</h4>
           </div>
 
           <div class="add-to-cart">
@@ -404,7 +624,29 @@
               <ul>
                   <li><a href="#" title="Add to Favorite"><i class="fa fa-heart"></i></a></li>
                   <li><a href="#" title="Add to Compare"><i class="fa fa-refresh"></i></a></li>
-                  <li><a href="#" title="Quick View"><i class="fa fa-search"></i></a></li>
+                  <li><a href="#" title="Quick View" data-toggle="modal" data-target="#exampleModalCenter"><i class="fa fa-search"></i></a>
+                    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                      <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            ...
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+
+     
               </ul>
           </figure>
 
@@ -418,7 +660,7 @@
                   <li><i class="icofont-star"></i></li>
                   <li><i class="icofont-star"></i></li>
               </ul>
-              <h4 class="price">$119</h4>
+              <h4 class="price">12d</h4>
           </div>
 
           <div class="add-to-cart">
@@ -435,7 +677,29 @@
               <ul>
                   <li><a href="#" title="Add to Favorite"><i class="fa fa-heart"></i></a></li>
                   <li><a href="#" title="Add to Compare"><i class="fa fa-refresh"></i></a></li>
-                  <li><a href="#" title="Quick View"><i class="fa fa-search"></i></a></li>
+                  <li><a href="#" title="Quick View" data-toggle="modal" data-target="#exampleModalCenter"><i class="fa fa-search"></i></a>
+                    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                      <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            ...
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+
+
               </ul>
           </figure>
 
@@ -449,7 +713,7 @@
                   <li><i class="icofont-star"></i></li>
                   <li><i class="icofont-star"></i></li>
               </ul>
-              <h4 class="price">$119</h4>
+              <h4 class="price">30</h4>
           </div>
 
           <div class="add-to-cart">
@@ -466,7 +730,29 @@
               <ul>
                   <li><a href="#" title="Add to Favorite"><i class="fa fa-heart"></i></a></li>
                   <li><a href="#" title="Add to Compare"><i class="fa fa-refresh"></i></a></li>
-                  <li><a href="#" title="Quick View"><i class="fa fa-search"></i></a></li>
+                  <li><a href="#" title="Quick View" data-toggle="modal" data-target="#exampleModalCenter"><i class="fa fa-search"></i></a>
+                    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                      <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            ...
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+
+
               </ul>
           </figure>
 
@@ -480,7 +766,7 @@
                   <li><i class="icofont-star"></i></li>
                   <li><i class="icofont-star"></i></li>
               </ul>
-              <h4 class="price">$119</h4>
+              <h4 class="price">20</h4>
           </div>
 
           <div class="add-to-cart">
