@@ -228,3 +228,20 @@ nav > .nav.nav-tabs{
         font-weight: bold;
         text-decoration: none;
     }
+    /*nav tabs*/
+    #nav-home{
+        width: 892.75px;
+        height: 456.47px;
+    }
+    #nav-profile{
+        width: 892.75px; 
+        height: 456.47px;
+    }
+    #nav-contact{
+        width: 892.75px; 
+        height: 456.47px;
+    }
+    #nav-about{
+        width: 892.75px; 
+        height: 456.47px;
+    }
