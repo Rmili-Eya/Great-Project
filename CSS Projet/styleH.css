@@ -1,297 +1,283 @@
-@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Itim&display=swap");
 
-*{
- font-family: 'Poppins', sans-serif;/*définir le font de toute la page */
- margin: 0;
- padding: 0;
- box-sizing: border-box;
- scroll-behavior: smooth;/*un effet de défilement fluide */
+* {
+  font-family: "Poppins", sans-serif; /*définir le font de toute la page */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth; /*un effet de défilement fluide */
 }
 /*************header Style*************/
 header {
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    padding: 40px 100px;
-    z-index: 10000;
-    transition: 0.5s;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding: 40px 100px;
+  z-index: 10000;
+  transition: 0.5s;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-header .logo{
-    color: #fff;
-    font-weight: 700;
-    font-size: 2em;
-    text-decoration: none;
+header .logo {
+  color: #fff;
+  font-weight: 700;
+  font-size: 2em;
+  text-decoration: none;
 }
-header .navigation{
-    position: relative;
-    display: flex;
+header .navigation {
+  position: relative;
+  display: flex;
 }
-header .navigation li{
-    list-style: none;
-    margin-left: 30px;
+header .navigation li {
+  list-style: none;
+  margin-left: 30px;
 }
-header .navigation li a{
-    text-decoration: none;
-    color: #fff;
-    font-weight: 300;
+header .navigation li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 300;
 }
-body{
-    min-height: 1000px;
+body {
+  min-height: 1000px;
 }
 /*style du fonction js */
-header.sticky{
-    background: #fff;
-    padding: 10px 100px;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0,05) ;
-    
+header.sticky {
+  background: #fff;
+  padding: 10px 100px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0, 05);
 }
-header.sticky .logo{
-    color: #111;
+header.sticky .logo {
+  color: #111;
 }
-header.sticky .navigation li a{
-    color: #111;
+header.sticky .navigation li a {
+  color: #111;
+  font-weight: bold;
 }
-header.sticky .navigation li a:hover{
-    color: #ff0157;
+header.sticky .navigation li a:hover {
+  color: #ff0157;
 }
 /* drop down menu de shop */
-.drop-down-menu{
-    list-style-type: none;
-    margin: 0px;
-    padding: 0px;
-    position: absolute;
-    display: none;/*pour que la liste sera caché*/
-    z-index: 999;     /*quand on a fait le slide la menu est disparut donc on augmenter la valeur du drop*/
-
+.drop-down-menu {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+  position: absolute;
+  display: none; /*pour que la liste sera caché*/
+  z-index: 999; /*quand on a fait le slide la menu est disparut donc on augmenter la valeur du drop*/
 }
-ul>li:hover .drop-down-menu
-{
-display: block;
-
+ul > li:hover .drop-down-menu {
+  display: block;
 }
-.drop-down-menu>li>a {
-    text-decoration: none;
-    color: white;
-    display: block;
-    padding: 15px;
-    background-color: black;
+.drop-down-menu > li > a {
+  text-decoration: none;
+  color: white;
+  display: block;
+  padding: 15px;
+  background-color: black;
 }
-#l1{
-    color: white;
+#l1 {
+  color: white;
 }
 
-
-p{
-    font-weight: 300;
-    color: #111;
+p {
+  font-weight: 300;
+  color: #111;
 }
 /*Background image*/
-.banner{
-    position: relative;
-    width: 100%;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: url(/Photos/home/background\ image.jpeg);
-    background-size: cover;
-
+.banner {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(/Photos/home/background\ image.jpeg);
+  background-size: cover;
 }
 /*style de l'écriture sur l'image*/
-.banner .content{
-    max-width: 900px;
-    text-align:center;
+.banner .content {
+  max-width: 900px;
+  text-align: center;
 }
-.banner .content h2{
-    font-size: 5em;
-    color: #fff;
-    margin-top: -160px;
+.banner .content h2 {
+  font-size: 5em;
+  color: #fff;
+  margin-top: -160px;
 }
-.banner .content p{
-    font-size: 1em;
-    color: #fff;
+.banner .content p {
+  font-size: 1em;
+  color: #fff;
 }
 /*Style du bouton Register*/
 
-.btn1{
-    font-size: 1em;
-    color: #fff;
-    background: #ff0157;
-    display: inline-block;
-    padding: 10px 30px;
-    margin-top: 20px;
-    text-transform: uppercase;
-    text-decoration: none;
-    letter-spacing: 2px;
-    transition: 0.5s;
-    font-weight: bold;
-    border-radius: 30px;
-    
+.btn1 {
+  font-size: 1em;
+  color: #fff;
+  background: #ff0157;
+  display: inline-block;
+  padding: 10px 30px;
+  margin-top: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 2px;
+  transition: 0.5s;
+  font-weight: bold;
+  border-radius: 30px;
 }
-.btn1:hover{
-    letter-spacing: 6px;
-    color: white;
-    font-weight: bold;
-    text-decoration: none;
+.btn1:hover {
+  letter-spacing: 6px;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
 }
 /*Espacement entre les sections*/
-section{
-    padding: 50px;
+section {
+  padding: 50px;
 }
 
-.row{
-    position: relative;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
+.row {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
 
-.title-text span{
-    color: #ff0157;
-    font-weight: 700;
-    font-size: 1.5em;
+.title-text span {
+  color: #ff0157;
+  font-weight: 700;
+  font-size: 1.5em;
 }
 /*Les carousels */
-.col-md-4{
-    display: inline-block;
-    margin-left:-10px;
-  }
-  .col-md-4 img{
-    width:100%;
-    height:auto;
-  }
-    
- 
-  /************************shop button*****************************/
-  #shopbtn{
-      text-align: center;
-  }
-  /************************footer**********************************/
- .page-footer{
-    background-color: black;
-    color: white;
+.col-md-4 {
+  display: inline-block;
+  margin-left: -10px;
 }
-.page-footer a{
-    color: white;
+.col-md-4 img {
+  width: 100%;
+  height: auto;
 }
-#desc-footer{
-    color: white;
-    text-align: justify;
+
+/************************shop button*****************************/
+#shopbtn {
+  text-align: center;
+}
+/************************footer**********************************/
+.page-footer {
+  background-color: black;
+  color: white;
+}
+.page-footer a {
+  color: white;
+}
+#desc-footer {
+  color: white;
+  text-align: justify;
 }
 
 /********************************News Letter************************************/
 
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800');
-#newsletter{
-             background-color: black;
-            }
-#newsinput{
-    padding: 12px 20px;
-    margin: 9px 0;
-    box-sizing: border-box;
-    border-radius: 10px;
-    outline: none;
-    width: 40%;
-    height:20%;
-    border:1px solid #7c7b7b;  
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800");
+#newsletter {
+  background-color: black;
+}
+#newsinput {
+  padding: 12px 20px;
+  margin: 9px 0;
+  box-sizing: border-box;
+  border-radius: 10px;
+  outline: none;
+  width: 40%;
+  height: 20%;
+  border: 1px solid #7c7b7b;
 }
 
-h3{
-	text-align: center;
-	font-size: 30px;
-	padding: 20px;
-	font-weight: 400;
-    letter-spacing: 1px;
-    color: #ff0157;
-
+h3 {
+  text-align: center;
+  font-size: 30px;
+  padding: 20px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: #ff0157;
 }
 
 #newsinput:hover {
-	border:1px solid #000;
-	transition: 6s;
+  border: 1px solid #000;
+  transition: 6s;
 }
-::placeholder { 
-    color: #000;
-    opacity: 1;
-    font-weight: 400;
+::placeholder {
+  color: #000;
+  opacity: 1;
+  font-weight: 400;
+  font-size: 20px;
+  text-align: center;
+}
+button {
+  height: 50px;
+  padding: 0;
+  margin: 0;
+}
+.btnShop {
+  border-radius: 30px;
+  width: 14%;
+  margin-left: 5px;
+  font-size: 20px;
+}
+@media (max-width: 992px) {
+  .btn {
+    width: 20%;
+  }
+  input[type="text"] {
+    width: 50%;
+  }
+}
+@media (max-width: 768px) {
+  .btn {
+    width: 40%;
+  }
+  input[type="text"] {
+    width: 90%;
+  }
+}
+@media (max-width: 440px) {
+  .btn {
+    width: 50%;
+    font-size: 18px;
+  }
+  input[type="text"] {
+    width: 100%;
+  }
+  h3 {
+    font-size: 22px;
+  }
+}
+@media (max-width: 373px) {
+  h3 {
     font-size: 20px;
-    text-align: center;
-
-
-}
-button{
-	height: 50px;
-	padding: 0;
-	margin: 0;
-	
-}
-.btnShop{
-	border-radius: 30px;
-	width: 14%;
-	margin-left: 5px;
-	font-size: 20px;
-
-}
-@media(max-width: 992px){
-	.btn{
-		width: 20%
-	}
-	input[type=text]{
-		width: 50%;
-	}
-}
-@media(max-width: 768px){
-	.btn{
-		width: 40%
-	}
-	input[type=text]{
-		width: 90%;
-	}
-}
-@media(max-width: 440px){
-	.btn{
-		width: 50%;
-		font-size: 18px;
-	}
-	input[type=text]{
-		width: 100%;
-	}
-	h3{
-		font-size: 22px;
-	}
-}
-@media(max-width: 373px){
-	h3{
-		font-size: 20px;
-		font-weight: 600;
-	}
-	h1{
-		font-size: 28px;
-		font-weight: 400;
-	}
-
-
+    font-weight: 600;
+  }
+  h1 {
+    font-size: 28px;
+    font-weight: 400;
+  }
 }
 /*footer*/
-footer{
-	background: #000;
-	text-align: center;
-	padding: 10px;
-
+footer {
+  background: #000;
+  text-align: center;
+  padding: 10px;
 }
-footer p{
-	color: #fff;
-	padding: 10px;
-	margin: 0;
-	font-weight: 700;
-	font-size: 20px;
+footer p {
+  color: #fff;
+  padding: 10px;
+  margin: 0;
+  font-weight: 700;
+  font-size: 20px;
 }
-footer{
-    padding:50px;
+footer {
+  padding: 50px;
 }
 body {
-    overflow-x: hidden; }
+  overflow-x: hidden;
+}

@@ -1,247 +1,205 @@
-@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
-*{
-  font-family: 'Poppins', sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Itim&display=swap");
+* {
+  font-family: "Poppins", sans-serif;
   margin: 0;
- padding: 0;
- box-sizing: border-box;
- scroll-behavior: smooth;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
 }
-body{
-    min-height: 1000px;
+body {
+  min-height: 1000px;
 }
 /*Padding entre les sections */
-section{
-    padding: 50px;
+section {
+  padding: 50px;
 }
 /* drop*/
-.drop-down-menu{
-    list-style-type: none;
-    margin: 0px;
-    padding: 0px;
-    position: absolute;
-    display: none;/*pour que la liste de réservation sera caché*/
-    z-index: 999;     /*quand on a fait le slide la menu est disparut donc on augmenter la valeur du drop*/
-
+.drop-down-menu {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+  position: absolute;
+  display: none; /*pour que la liste de réservation sera caché*/
+  z-index: 999; /*quand on a fait le slide la menu est disparut donc on augmenter la valeur du drop*/
 }
-ul>li:hover .drop-down-menu
-{
-display: block;
-
+ul > li:hover .drop-down-menu {
+  display: block;
 }
-.drop-down-menu>li>a {
-    text-decoration: none;
-    color: white;
-    display: block;
-    padding: 15px;
-    background-color: black;
-    
-}
-#l1{
-    color: white;
+.drop-down-menu > li > a {
+  text-decoration: none;
+  color: white;
+  display: block;
+  padding: 15px;
+  background-color: black;
 }
 
-
-p{
-    font-weight: 300;
-    color: #111;
-}
-.banner{
-    position: relative;
-    width: 100%;
-    min-height: 100vh;
-    display: flex;
-   justify-content: center;
-   align-items: center;
-    background: url(/Photos/home/background\ image.jpeg);
-    background-size: cover;
-
-}
-.banner .content{
-    max-width: 900px;
-    text-align:center;
-}
-.banner .content h2{
-    font-size: 5em;
-    color: #fff;
-    margin-top: -160px;
-}
-.banner .content p{
-    font-size: 1em;
-    color: #fff;
-}
-.btn1{
-    font-size: 1em;
-    color: #fff;
-    background: #ff0157;
-    display: inline-block;
-    padding: 10px 30px;
-    margin-top: 20px;
-    text-transform: uppercase;
-    text-decoration: none;
-    letter-spacing: 2px;
-    transition: 0.5s;
-}
-.btn1:hover{
-    letter-spacing: 6px;
-}
 /**header*/
 header {
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    padding: 40px 100px;
-    z-index: 10000;
-    transition: 0.5s;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding: 40px 100px;
+  z-index: 10000;
+  transition: 0.5s;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-header .logo{
-    color: #fff;
-    font-weight: 700;
-    font-size: 2em;
-    text-decoration: none;
+header .logo {
+  color: #fff;
+  font-weight: 700;
+  font-size: 2em;
+  text-decoration: none;
 }
-header .navigation{
-    position: relative;
-    display: flex;
+header .navigation {
+  position: relative;
+  display: flex;
 }
-header .navigation li{
-    list-style: none;
-    margin-left: 30px;
+header .navigation li {
+  list-style: none;
+  margin-left: 30px;
 }
-header .navigation li a{
-    text-decoration: none;
-    color: #fff;
-    font-weight: 300;
+header .navigation li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 300;
 }
-body{
-    min-height: 1000px;
+body {
+  min-height: 1000px;
 }
-header.sticky{
-    background: #fff;
-    padding: 10px 100px;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0,05) ;
-    
+header.sticky {
+  background: #fff;
+  padding: 10px 100px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0, 05);
 }
-header.sticky .logo{
-    color: #111;
+header.sticky .logo {
+  color: #111;
 }
-header.sticky .navigation li a{
-    color: #111;
-    font-weight: bold;
+header.sticky .navigation li a {
+  color: #111;
+  font-weight: bold;
 }
-header.sticky .navigation li a:hover{
-    color: #ff0157;
+header.sticky .navigation li a:hover {
+  color: #ff0157;
 }
 /*section*/
-section{
-    padding: 100px;
+section {
+  padding: 100px;
 }
-
 
 /*tabs*/
 
-nav > .nav.nav-tabs{
+nav > .nav.nav-tabs {
+  border: none;
+  color: #fff;
+  background: #272e38;
+  border-radius: 0;
+}
+nav > div a.nav-item.nav-link,
+nav > div a.nav-item.nav-link.active {
+  border: none;
+  padding: 18px 25px;
+  color: #fff;
+  background: #272e38;
+  border-radius: 0;
+}
 
-    border: none;
-      color:#fff;
-      background:#272e38;
-      border-radius:0;
-  
-  }
-  nav > div a.nav-item.nav-link,
-  nav > div a.nav-item.nav-link.active
-  {
-    border: none;
-      padding: 18px 25px;
-      color:#fff;
-      background:#272e38;
-      border-radius:0;
-  }
-  
-  nav > div a.nav-item.nav-link.active:after
-   {
-    content: "";
-    position: relative;
-    bottom: -60px;
-    left: -10%;
-    border: 15px solid transparent;
-    border-top-color: #ff0157 ;
-  }
-  .tab-content{
-    background: #fdfdfd;
-      line-height: 25px;
-      border: 1px solid #ddd;
-      border-top:5px solid #ff0157;
-      border-bottom:5px solid #ff0157;
-      padding:30px 25px;
-  }
-  
-  nav > div a.nav-item.nav-link:hover,
-  nav > div a.nav-item.nav-link:focus
-  {
-    border: none;
-      background: #ff0157;
-      color:#fff;
-      border-radius:0;
-      transition:background 0.20s linear;
-  }
-  section{
-      padding: 150px;
-  }
-  #tentacles{
-     border-color: #ff0157;
-  }
-  /*footer*/
- .page-footer{
-    background-color: black;
-    color: white;
+nav > div a.nav-item.nav-link.active:after {
+  content: "";
+  position: relative;
+  bottom: -60px;
+  left: -10%;
+  border: 15px solid transparent;
+  border-top-color: #ff0157;
 }
-.page-footer a{
-    color: white;
+.tab-content {
+  background: #fdfdfd;
+  line-height: 25px;
+  border: 1px solid #ddd;
+  border-top: 5px solid #ff0157;
+  border-bottom: 5px solid #ff0157;
+  padding: 30px 25px;
 }
-#desc-footer{
-    color: white;
-    text-align: justify;
+
+nav > div a.nav-item.nav-link:hover,
+nav > div a.nav-item.nav-link:focus {
+  border: none;
+  background: #ff0157;
+  color: #fff;
+  border-radius: 0;
+  transition: background 0.2s linear;
 }
-    #bouttOnorder{
-        font-size: 1em;
-        color: #fff;
-        background: #ff0157;
-        display: inline-block;
-        padding: 10px 30px;
-        margin-top: 20px;
-        text-transform: uppercase;
-        text-decoration: none;
-        letter-spacing: 2px;
-        transition: 0.5s;
-        font-weight: bold;
-        border-radius: 30px;
-        float: right;
-        
-    }
-    #bouttOnorder:hover{
-        letter-spacing: 6px;
-        color: white;
-        font-weight: bold;
-        text-decoration: none;
-    }
-    /*nav tabs*/
-    #nav-home{
-        width: 892.75px;
-        height: 456.47px;
-    }
-    #nav-profile{
-        width: 892.75px; 
-        height: 456.47px;
-    }
-    #nav-contact{
-        width: 892.75px; 
-        height: 456.47px;
-    }
-    #nav-about{
-        width: 892.75px; 
-        height: 456.47px;
-    }
+section {
+  padding: 150px;
+}
+#tentacles {
+  border-color: #ff0157;
+}
+/*footer*/
+.page-footer {
+  background-color: black;
+  color: white;
+}
+.page-footer a {
+  color: white;
+}
+#desc-footer {
+  color: white;
+  text-align: justify;
+}
+#bouttOnorder {
+  font-size: 1em;
+  color: #fff;
+  background: #ff0157;
+  display: inline-block;
+  padding: 10px 30px;
+  margin-top: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 2px;
+  transition: 0.5s;
+  font-weight: bold;
+  border-radius: 30px;
+  float: right;
+}
+#bouttOnorder:hover {
+  letter-spacing: 6px;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+/*nav tabs*/
+#nav-home {
+  width: 892.75px;
+  height: 456.47px;
+}
+#nav-profile {
+  width: 892.75px;
+  height: 456.47px;
+}
+#nav-contact {
+  width: 892.75px;
+  height: 456.47px;
+}
+#nav-about {
+  width: 892.75px;
+  height: 456.47px;
+}
+/*upload file */
+.md-form {
+  text-align: center;
+}
+/*text sur le mug*/
+.alignC {
+  text-align: center;
+}
+/*hr page cart*/
+hr {
+  background-color: #ff0157;
+}
+/*span words*/
+body {
+  overflow-x: scroll;
+  overflow-y: hidden;
+}

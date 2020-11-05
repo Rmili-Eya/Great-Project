@@ -55,7 +55,7 @@
                     <div class="col-md-6"><br>
                         <form action="" >
  <!--------------------Sélectionner Produits Modal----------------->
-                 
+ <div class="alignC">               
 <button type="button" class="btn btn-secondary w-75 " data-toggle="modal" data-target="#m3">Select Product</button><br><br>
   
 <label for="favcolor" class="text-dark font-weight-bold">Select your favorite color:</label>
@@ -63,13 +63,13 @@
                         
 <label for="tentacles" class="font-weight-bold">Quantity</label>
 <input type="number" id="tentacles" name="tentacles" placeholder="Quantity" min="10" max="100" class="w-50"><br><br>
-            
+</div>            
   <!-- Modal -->
   <div class="modal fade" id="m3" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+          <h5 class="modal-title font-weight-bold" id="exampleModalLongTitle">Choose a product</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
@@ -85,63 +85,8 @@
       </div>
     </div>
   </div>
-                <!------------------------------------------------------------->
- <!-- Button trigger modal -->
- <div class="d-flex justify-content-around py-5">
-<button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#m1">
-   Product info
-  </button>
-  
-  <!-- Modal -->
-  <div class="modal fade" id="m1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          ...
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-------------------------------------------2éme modal---------------------------------------->
- <!-- Button trigger modal -->
- <button type="button" class="btn btn-secondary " data-toggle="modal" data-target="#m2">
-   Size Gide
-   </button>
-   
-   <!-- Modal -->
-   <div class="modal fade" id="m2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-     <div class="modal-dialog modal-dialog-centered" role="document">
-       <div class="modal-content">
-         <div class="modal-header">
-           <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
-           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-             <span aria-hidden="true">&times;</span>
-           </button>
-         </div>
-         <div class="modal-body">
-           ...
-         </div>
-         <div class="modal-footer">
-           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-           <button type="button" class="btn btn-primary">Save changes</button>
-         </div>
-       </div>
-     </div>
-   </div>
-</div><!---big div de modal------>
  </form>
-
-                    </div>
+</div>
 
                   
                     <div class="col-md-6">
@@ -183,8 +128,9 @@
                 <div class="row">
                   <div class="col-md-6">
 <!-------------------------------------------Modal---------------------------------------->
+                <div class="alignC">
                   <a href="" data-toggle="modal" data-target="#TextModal" class="font-weight-bold text-decoration-none text-dark text-center"><h2> Texte</h2></a>                 
-                  <select class="w-50 m-5 rounded bg-secondary">
+                  <select class="w-50 rounded bg-secondary m-0">
                     <option value="">Size</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
@@ -192,8 +138,8 @@
                     <option value="4">4</option>
                     <option value="5">5</option>
                     <option value="6">6</option>
-                </select>
-                <select class="w-50 m-5 rounded bg-secondary">
+                </select><br><br>
+                <select class="w-50 rounded bg-secondary m-0">
                   <option value="">Align</option>
                   <option value="1">Center</option>
                   <option value="2">Justify</option>
@@ -201,10 +147,12 @@
                   <option value="3">Left</option>
 
                  
-              </select>
-                  
+              </select><br><br>
+              <label for="favcolor" class="text-dark font-weight-bold">Select your favorite color:</label>
+<input type="color" id="favcolor" name="favcolor" value="#ff0000"><br><br>
+</div> 
                   </div>
-<!-- Moda du Text customized -->
+<!-- Modal du Text customized -->
 <div class="modal fade" id="TextModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
@@ -236,9 +184,8 @@
               </div>
               <div class="tab-pane fade" id="nav-about" role="tabpanel" aria-labelledby="nav-about-tab">
                <div class="container">
-                 <div class="row">
-                  <form class="md-form ">
-                    <div class="file-field big m-5">
+                  <form class="md-form py-5">
+                    <div class="file-field big ">
                       <a class="btn-floating btn-lg pink lighten-1">
                         <i class="fas fa-paperclip" aria-hidden="true"></i>
                         <input type="file" multiple>
@@ -305,28 +252,13 @@
           <li><a href="http://webenlance.com"><i class="fab fa-instagram"></i></a></li>
           </ul>
       </div>
-
-  </div>
- 
-
-  <!-- Copyright -->
+    </div>
+ <!-- Copyright -->
   <div class="footer-copyright text-center py-3">© 2020 Copyright:
     <a href="https://mdbootstrap.com/">Ruyuu Print</a>
   </div>
-  <!-- Copyright -->
-
 </footer>
-<!-- Footer -->
-
-
-
-
-
  </section>
- <script>
-  $(document).ready(function(){
-    $('[data-toggle="popover"]').popover();
-  });
-  </script>
+ 
 </body>
 </html>
