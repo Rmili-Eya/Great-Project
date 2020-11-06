@@ -109,6 +109,8 @@ header .navigation{
 header .navigation li{
     list-style: none;
     margin-left: 30px;
+
+    font-weight: bold;
 }
 header .navigation li a{
     text-decoration: none;

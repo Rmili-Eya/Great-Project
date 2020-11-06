@@ -17,16 +17,9 @@
     <link rel="stylesheet" href="/CSS Projet/styleH.css">
     
 </head>
-<div class="container">
-  <div class="d-flex justify-content-center">
-    <div class="spinner-border" role="status">
-      <span class="sr-only">Loading...</span>
-    </div>
-  </div>
-</div>
-<body>
+
 <!--------------------------------------------Nav-------------------------------------------------------->
-<!-----Classe sticky pour la fonction JS------>
+
 <header class="sticky">
 <!-------------Logo----------->
 <a href="#" class="logo">Ruyuu Print</a>
@@ -202,7 +195,7 @@
 <section class="about" id="about">
   <div class="container-fluid">
     <div class="row d-flex justify-content-between">
-        <div class="col-md-6 col-sm-12 position-relative">
+        <div class="col-md-6  col-sm-12 position-relative">
             <h2 class="title-text"><span>A</span>bout Us</h2>
             <p class="font-weight-bold text-dark">
                 Ruyuu Print offers you a whole bunch of personalized objects: <br>
@@ -238,55 +231,37 @@
           <li data-target="#demo" data-slide-to="2"></li>
         </ul>
       
-        <!-- The slideshow -->
+<!--------------------------------The slideshow of Clients FeedBacks ---------------------------------------------->
+<!--------------1ér Slide----------------->
         <div class="carousel-inner no-padding my-5">
           <div class="carousel-item active">
             <div class="col-xs-4 col-sm-4 col-md-4">
-              <a href="#" onclick=abc(this) class="slider_info">
-                <img class="img card-img-top" src="/Photos/custumer love/6.jpg"  style="width: 340px; height: 300px;">
-                
-              </a>
-              
+                <img class="img card-img-top" src="/Photos/custumer love/6.jpg"  style="width: 340px; height: 300px;">  
             </div> 
-        <!--------------Cards------------------------------------------------------------------------->
-            
+
             <div class="col-xs-4 col-sm-4 col-md-4">
-              <a href="#" onclick=abc(this) class="slider_info">
                 <img class="img-fluid card-img-top rounded-bottom" src="/Photos/custumer love/5.jpg" style="width: 340px; height: 300px;">
-              </a>
-             
             </div>
+
             <div class="col-xs-4 col-sm-4 col-md-4">
-              <a href="#" onclick=abc(this) class="slider_info">
+              
                 <img class="img-fluid card-img-top rounded-bottom" src="/Photos/custumer love/4.jpg" style="width: 340px; height: 300px;">
-                
-              </a>
-             
+
             </div>
           </div>
-          
+<!---------2éme Slide--------------->          
           <div class="carousel-item">
             <div class="col-xs-4 col-sm-4 col-md-4">
-              <a href="#" onclick=abc(this) class="slider_info">
-                <img class="img-fluid card-img-top" src="/Photos/custumer love/3.jpg" style="width: 340px; height: 300px;">
-                
-              </a>
-             
-      
-            </div>
-            <div class="col-xs-4 col-sm-4 col-md-4">
-              <a href="#" onclick=abc(this) class="slider_info">
-                <img class="img-fluid card-img-top" src="/Photos/custumer love/2.jpg" style="width: 340px; height: 300px;">
-              </a>
-             
-      
-            </div>
-            <div class="col-xs-4 col-sm-4 col-md-4">
-              <a href="#" onclick=abc(this) class="slider_info">
-                <img class="img-fluid card-img-top" src="/Photos/custumer love/1.jpg"style="width: 340px; height: 300px;">
-              </a>
               
-      
+                <img class="img-fluid card-img-top" src="/Photos/custumer love/3.jpg" style="width: 340px; height: 300px;">
+            </div>
+            <div class="col-xs-4 col-sm-4 col-md-4">
+                <img class="img-fluid card-img-top" src="/Photos/custumer love/2.jpg" style="width: 340px; height: 300px;">
+          
+            </div>
+            <div class="col-xs-4 col-sm-4 col-md-4">
+                <img class="img-fluid card-img-top" src="/Photos/custumer love/1.jpg"style="width: 340px; height: 300px;">
+            
             </div>
           </div>
          
@@ -313,15 +288,14 @@
 
 <footer class="page-footer font-small  pt-4">
   
-    <!-- Footer Links -->
+
     <div class="container-fluid text-center text-md-left">
-  
-  
+
       <div class="row">
   
         <div class="col-md-6 mt-md-0 mt-3">
   
-          <!-- Description ------------------------------------------>
+<!-----------------------------Description ------------------------------------------>
           <h5 class="text-uppercase text-danger">Ruyuu Print</h5>
           <span id="desc-footer"> Ruyuu Print offers you a whole bunch of personalized objects: 
                  mugs, key ings, plant pots, notebooks.
@@ -334,7 +308,7 @@
 
     <div class="col-md-3 mb-md-0 mb-3">
   
-      <!-----------------------Quik Links--------------------- -->
+<!-----------------------Quik Links--------------------------------------------------- -->
           <h5 class="text-uppercase text-danger">Quik Links</h5>
           <a href="/Pages/Home.html">Home</a><br>
           <a href="#about">About Us</a><br>
@@ -370,15 +344,8 @@
 
   
 
-<!-----------------------------------------------Js Header----------------------------------------------------->
-<script type="text/javascript">
-window.addEventListener('scroll',function()
-{
-    const header = document.querySelector('header');
-    header.classList.toggle("sticky", window.scrollY > 0);
-    
- });
-</script>
+
+
 <!------------------------------------------Register Form Js-------------------------------------------------------->
 <script>
   // Example starter JavaScript for disabling form submissions if there are invalid fields

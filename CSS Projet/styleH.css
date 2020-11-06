@@ -33,6 +33,7 @@ header .navigation {
 header .navigation li {
   list-style: none;
   margin-left: 30px;
+  font-weight: bold;
 }
 header .navigation li a {
   text-decoration: none;
@@ -42,7 +43,7 @@ header .navigation li a {
 body {
   min-height: 1000px;
 }
-/*style du fonction js */
+/*style du nav */
 header.sticky {
   background: #fff;
   padding: 10px 100px;
@@ -180,7 +181,10 @@ section {
 
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800");
 #newsletter {
-  background-color: black;
+/*  background-color: black;*/
+background-color: #4158D0;
+background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+
 }
 #newsinput {
   padding: 12px 20px;
@@ -202,10 +206,6 @@ h3 {
   color: #ff0157;
 }
 
-#newsinput:hover {
-  border: 1px solid #000;
-  transition: 6s;
-}
 ::placeholder {
   color: #000;
   opacity: 1;
@@ -218,12 +218,14 @@ button {
   padding: 0;
   margin: 0;
 }
+/*Boutton go to shop*/
 .btnShop {
   border-radius: 30px;
   width: 14%;
   margin-left: 5px;
   font-size: 20px;
 }
+/*Media Query du News Letter*/
 @media (max-width: 992px) {
   .btn {
     width: 20%;
