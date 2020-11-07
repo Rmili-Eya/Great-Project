@@ -7,13 +7,11 @@
     <link rel="shortcut icon" type="image/png" href="/Photos/home/icons8-aimer-64.png">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
     
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
     <link rel="stylesheet" href="/CSS Projet/styleH.css">
     
 </head>
@@ -21,176 +19,55 @@
 <!--------------------------------------------Nav-------------------------------------------------------->
 
 <header class="sticky">
-<!-------------Logo----------->
-<a href="#" class="logo">Ruyuu Print</a>
-<!-----------Nav----------------->
-<ul class="navigation">
-   <li><a href="">Home</a></li>
-   <li><a href="#about">About Us</a></li>
-   <li><a href="Customized.html">Customized</a></li>
-   <li>
-       <a href="Shop.html">Shop</a>
-       <ul class="drop-down-menu">
-        <li><a  id="l1" href="Notebook.html">Notebook</a> </li>
-        <li><a id="l1" href="Mug.html">Mug</a></li>
-        <li><a id="l1" href="PackMutchy.html">Pack Mutchy</a></li>
-       </ul>
-    </li>
-   <li><a href="cart.html"><img src="https://img.icons8.com/windows/32/000000/shopping-basket-2.png"/></a></li>
-   <li><a href="contact.html">Contact</a></li>
-</ul>      
+  <div class="container-fluid">
+      <!---------------------------NavBar-------------------------------------->
+      <nav class="navbar navbar-expand-lg navbar-light " id="nav-f">
+        <a class="navbar-brand" href="#">Ruyuu Print</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHome" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        
+          <div class="collapse navbar-collapse" id="navbarHome">
+            <ul class="navbar-nav ml-auto">
+              
+              <li class="nav-item active">
+                <a class="nav-link" href="/Pages/Home.html">Home</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#about">About Us</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="/Pages/Customized.html">Customized </a>
+              </li>
+              
+              <li class="nav-item">
+                <a class="nav-link" href="/Pages/Shop.html">Shop </a>
+            </li>
+              
+             
+              <li class="nav-item">
+                 <a class="nav-link" href="/Pages/cart.html"><img src="https://img.icons8.com/windows/32/000000/shopping-basket-2.png"/></a>
+              </li>
+             <li class="nav-item">
+                 <a class="nav-link" href="/Pages/contact.html">Contact</a>
+             </li>
+            
+              
+            </ul>
+            
+          </div>
+        </nav>
+  </div>
 </header>
 <!-------------------------------------------Background image+Slogan+button--------------------------------------------------------->
 <section class="banner" id="banner">
     <div class="content">
     <!---------Slogan------------>
      <h2>We do it Best</h2>
-     <!---------Bouton Register------------>
- 
-     <button  class="btn1" id="LoginButton" data-toggle="modal" data-target="#LoginModal ">
-      Log in 
-      </button>
-
-      <!----------------------------------------Modal----------------------------------------------- -->
-  
-  <div class="modal fade" id="LoginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLongTitle">Log in</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          <div class="card">
-            <article class="card-body">
-   
-              <h4 class="card-title mb-4 mt-1">Sign in</h4>
-              <p>
-                <a href="" class="btn btn-block btn-outline-info"> <i class="fab fa-twitter"></i>   Login via Twitter</a>
-                <a href="" class="btn btn-block btn-outline-primary"> <i class="fab fa-facebook-f"></i>   Login via facebook</a>
-              </p>
-              <hr>
-              <form class="needs-validation"novalidate>
-                <div class="form-group">
-                    <input name="" class="form-control" placeholder="Email or login" type="email" required>
-                    <div class="valid-feedback">
-                      Looks good!
-                    </div>
-                    <div class="invalid-feedback">
-                      Please enter your email
-                    </div>
-                </div> <!-- form-group// -->
-                <div class="form-group">
-                    <input class="form-control" placeholder="******" type="password"required>
-                    <div class="valid-feedback">
-                      Looks good!
-                    </div>
-                </div> <!-- form-group// -->                                      
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <button type="submit" class="btn btn-primary btn-block"> Login  </button>
-                        </div> <!-- form-group// -->
-                    </div>
-                    <div class="col-md-6 text-right">
-                        <a class="small" href="#">Forgot password?</a>
-                    </div>                                            
-                </div> <!-- .row// -->                                                                  
-            </form>
-        </div>
-        </div>
-        <div class="modal-footer">
-      
-        </div>
-      </div>
-    </div>
+     
+      <div id="shopbtn"><a href="Shop.html" class="btn1">Visit Shop</a></div>
   </div>
-  <!-----------------------------------------------------2éme Modal--------------------------------------------------------------->
-  <button  class="btn1" id="LoginButton" data-toggle="modal" data-target="#RegisterModal">
-    Register
-    </button>
-    
-    <!-- Modal -->
-    <div class="modal fade" id="RegisterModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLongTitle">Register</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <div class="modal-body">
-              <div class="card">
-                <article class="card-body">
-                  <h4 class="card-title mb-4 mt-1">Register</h4>
-                  
-                  <hr>
-                  <form class="needs-validation" novalidate>
-                    <div class="row">
-                      <div class="col-xs-6 col-sm-6 col-md-6">
-                        <div class="form-group">
-                          <input type="text" name="first_name" id="first_name" class="form-control input-sm" placeholder="First Name"required>
-                          <div class="valid-feedback">
-                            Looks good!
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-xs-6 col-sm-6 col-md-6">
-                        <div class="form-group">
-                          <input type="text" name="last_name" id="last_name" class="form-control input-sm" placeholder="Last Name"required>
-                          <div class="valid-feedback">
-                            Looks good!
-                          </div>
-                        </div>
-                      </div>
-                    </div>                                     
-                    <div class="row">
-                        <div class="col-md-12">
-                          <div class="form-group">
-                            <input type="email" name="email" id="email" class="form-control input-sm" placeholder="Email Address"required>
-                            <div class="valid-feedback">
-                              Looks good!
-                            </div>
-                          </div>
-                        </div>
-                                                               
-                    </div> <!-- .row// -->   
-                    <div class="row">
-                      <div class="col-xs-6 col-sm-6 col-md-6">
-                        <div class="form-group">
-                          <input type="password" name="password" id="password" class="form-control input-sm" placeholder="Password"required>
-                          <div class="valid-feedback">
-                            Looks good!
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-xs-6 col-sm-6 col-md-6">
-                        <div class="form-group">
-                          <input type="password" name="password_confirmation" id="password_confirmation" class="form-control input-sm" placeholder="Confirm Password" required>
-                          <div class="valid-feedback">
-                            Looks good!
-                          </div>
-                        </div>
-                      </div>
-                    </div>  
-                    <button type="submit" class="btn btn-primary btn-block"> Register </button>
-                  </form>
-            </div>
-            </div>
-          </div>
-          <div class="modal-footer">
-            
-          </div>
-        </div>
-      </div>
-    </div>         
- </div>
-</div>
-</section>  
+  </section>
 <!-------------------------------------------------About Us ---------------------------------------------------->
 <section class="about" id="about">
   <div class="container-fluid">
@@ -280,7 +157,7 @@
         <h3>SUBSCRIBE NOW</h3>
         <form action="#" method="Post">
             <input type="text" id="newsinput" name="text" placeholder="Enter Your Email Id">
-            <button type="button" class="btn btn-dark">Subscribe</button>
+            <button type="button" class="btn1">Subscribe</button>
         </form>
     </div>
 </section><br><br><br>
@@ -296,7 +173,7 @@
         <div class="col-md-6 mt-md-0 mt-3">
   
 <!-----------------------------Description ------------------------------------------>
-          <h5 class="text-uppercase text-danger">Ruyuu Print</h5>
+          <h5 class="text-uppercase text-danger text-center">Ruyuu Print</h5>
           <span id="desc-footer"> Ruyuu Print offers you a whole bunch of personalized objects: 
                  mugs, key ings, plant pots, notebooks.
                 You can select colors and formats.</span>
@@ -309,68 +186,40 @@
     <div class="col-md-3 mb-md-0 mb-3">
   
 <!-----------------------Quik Links--------------------------------------------------- -->
-          <h5 class="text-uppercase text-danger">Quik Links</h5>
-          <a href="/Pages/Home.html">Home</a><br>
-          <a href="#about">About Us</a><br>
-          <a href="/Pages/Customized.html">Customized</a><br>
-          <a href="/Pages/Shop.html">Shop</a><br>
-          <a href="/Pages/Notebook.html">Notebook</a><br>
-          <a href="/Pages/Mug.html">Mug</a><br>
-          <a href="">Cart</a><br>
-          <a href="">Contact</a><br>
+          <h5 class="text-uppercase text-danger text-center">Quik Links</h5>
+         <div class="container d-flex flex-lg-wrap justify-content-between justify-content-center">
+          <a href="/Pages/Home.html">Home</a>
+          <a href="#about">About Us</a>
+          <a href="/Pages/Customized.html">Customized</a>
+          <a href="/Pages/Shop.html">Shop</a>
+          <a href="/Pages/Notebook.html">Notebook</a>
+          <a href="/Pages/Mug.html">Mug</a>
+          <a href="cart.html">Cart</a>
+          <a href="contact.html" >Contact</a>
+        </div>
     </div>
        <!--------------------------Conatct Icons------------------------>
         <div class="col-md-3 mb-md-0 mb-3">
-          <h5 class="text-uppercase text-danger">Contact</h5>
-          <ul class="social_footer_ul list-unstyled">
-            <li><a href="http://webenlance.com"><i class="fab fa-facebook-f"></i></a></li>
-            <li><a href="http://webenlance.com"><i class="fab fa-twitter"></i></a></li>
-            <li><a href="http://webenlance.com"><i class="fab fa-linkedin"></i></a></li>
-            <li><a href="http://webenlance.com"><i class="fab fa-instagram"></i></a></li>
+          <h5 class="text-uppercase text-danger text-center">Contact</h5>
+          <ul class="social_footer_ul list-unstyled d-flex justify-content-lg-between justify-content-center">
+            <li><a href="http://webenlance.com" class="col-sm-3"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="http://webenlance.com"class="col-sm-3"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="http://webenlance.com"class="col-sm-3"><i class="fab fa-linkedin"></i></a></li>
+            <li><a href="http://webenlance.com"class="col-sm-3"><i class="fab fa-instagram"></i></a></li>
             </ul>
         </div>
   
-    </div>
+    </div><br><br>
    
   
     <!-- Copyright -->
     <div class="footer-copyright text-center py-3">© 2020 Copyright:
-      <a href="https://mdbootstrap.com/">Ruyuu Print</a>
+      <a href="/Pages/Home.html">Ruyuu Print</a>
     </div>
     <!-- Copyright -->
 
   </footer>
   <!-- Footer -->
-
-  
-
-
-
-<!------------------------------------------Register Form Js-------------------------------------------------------->
-<script>
-  // Example starter JavaScript for disabling form submissions if there are invalid fields
-  (function() {
-    'use strict';
-    window.addEventListener('load', function() {
-      // Fetch all the forms we want to apply custom Bootstrap validation styles to
-      var forms = document.getElementsByClassName('needs-validation');
-      // Loop over them and prevent submission
-      var validation = Array.prototype.filter.call(forms, function(form) {
-        form.addEventListener('submit', function(event) {
-          if (form.checkValidity() === false) {
-            event.preventDefault();
-            event.stopPropagation();
-          }
-          form.classList.add('was-validated');
-        }, false);
-      });
-    }, false);
-  })();
-  </script>
-
-     <!---------------------------------------------->
-  
-
-   
+ 
 </body>
 </html>

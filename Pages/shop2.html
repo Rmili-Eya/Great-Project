@@ -3,50 +3,103 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shop2 Page</title>
+    <title>Shop Page</title>
     <link rel="shortcut icon" type="image/png" href="/Photos/home/icons8-aimer-64.png">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <link rel="stylesheet" href="/CSS Projet/styleSH.css">
 </head>
 <body>
 <!--------------------------------------------Nav------------------------------------------------------>    
-    <header class="sticky">
-        <a href="#" class="logo">Ruyuu Print</a>
-        <ul class="navigation">
-           <li><a href="Home.html">Home</a></li>
-           <li><a href="/Pages/Home.html#about">About Us</a></li>
-           <li><a href="contact.html">Customized</a></li>
-           <li>
-               <a href="">Shop</a>
-               <ul class="drop-down-menu">
-                <li><a  id="l1" href="Notebook.html">Notebook</a> </li>
-                <li><a id="l1" href="Mug.html">Mug</a></li>
-                <li><a id="l1" href="PackMutchy.html">Pack Mutchy</a></li>
-            </ul>
+
+<header class="sticky">
+  <div class="container-fluid">
+      <!---------------------------NavBar-------------------------------------->
+      <nav class="navbar navbar-expand-lg navbar-light " id="nav-f">
+        <a class="navbar-brand" href="Home.html">Ruyuu Print</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHome" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        
+          <div class="collapse navbar-collapse" id="navbarHome">
+            <ul class="navbar-nav ml-auto">
+              
+              <li class="nav-item active">
+                <a class="nav-link" href="/Pages/Home.html">Home</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#about">About Us</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="/Pages/Customized.html">Customized </a>
+              </li>
+              
+              <li class="nav-item">
+                <a class="nav-link" href="/Pages/Shop.html">Shop</a>
             </li>
-           <li><a href="cart.html"><img src="https://img.icons8.com/windows/32/000000/shopping-basket-2.png"/></a></li>
-           <li><a href="contact.html">Contact</a></li>
-        </ul>      
-        </header>
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/Pages/cart.html"><img src="https://img.icons8.com/windows/32/000000/shopping-basket-2.png"/></a>
+        </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/Pages/contact.html">Contact</a>
+        </li>
+            
+              
+            </ul>
+            
+          </div>
+        </nav>
+  </div>
+</header>
         <!-------------------------------------------Background image+Slogan+button--------------------------------------------------------->
         <section class="banner" id="banner">
             <div class="content">
              <h2>We do it Best</h2>
-            
-             <a href="#" class="btn1">Register Now</a>
-            
+               
             </div>
         </section>  
-        <!-------------------------------------------------Notebook section-------------------------------------------->
+<!----------------------------------------------Products Images--------------------------------------->
+<section>
+  <div class="container-fluid">
+    <div class="row">
+
+      <div class="col-md-4 w-50 card-img-top"><a href="Notebook.html">
+        <img  src="/Photos/notebook/prodct.jpg"class="img-thumbnail"  alt="" >
+        <div class="card-img-overlay ">
+          <span class="float-left font-weight-bold text-dark" id="color">Discover our </span>
+          <span class=" text-uppercase  font-weight-bold text-center" id="titreProduit">Notebook</span>
+          
+          
+        </div>
+      </div></a> 
+
+      <div class="col-md-4 w-50 card-img-top"><a href="Mug.html">
+         <img  src="/Photos/mug/product2.jpg" alt="" class="img-thumbnail" >
+      <div class="card-img-overlay text-center">
+        <span class="float-left font-weight-bold text-dark ml-5" id="color">Discover our </span>
+        <span class=" text-uppercase  font-weight-bold " id="titreProduit">Mug</span>
+        
+      </div>
+    </div></a>
+
+      <div  class="col-md-4 w-50 card-img-top"><a href="PackMutchy.html"> 
+        <img src="/Photos/pack mutchy/mt4.jpg" class="img-thumbnail" alt="" >
+        <div class="card-img-overlay text-center ">
+          <span class="float-left font-weight-bold text-dark" id="color">Discover our </span>
+          <span class=" text-uppercase  font-weight-bold" id="titreProduit">Pack Mutchy</span>
+          
+        </div>
+      </div></a>
+    </div>
+  </div>
+</section>
+<hr>
+<!-------------------------------------------------Gallery-------------------------------------------->
         <section>
         <div class="container mt-2">
               <div class="row">
@@ -99,7 +152,7 @@
                 
                  
                  <div class="row d-flex justify-content-between">
-                     
+                <!---------1 ligne-------------->
                      <div class="col-sm-6 col-lg-3"> 
                          <div class="single-publication">
                              <figure>
@@ -108,8 +161,7 @@
                                  </a>
  
                                  <ul>
-                                     <li><a href="#" title="Add to Favorite"><i class="fa fa-heart"></i></a></li>
-                                     <li><a href="#" title="Add to Compare"><i class="fa fa-refresh"></i></a></li>
+  
                                      <li><a href="#" title="Quick View" data-toggle="modal" data-target="#m1"><i class="fa fa-search"></i></a>
                                       <div class="modal fade" id="m1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                                         <div class="modal-dialog modal-dialog-centered" role="document">
@@ -125,7 +177,7 @@
                                               <div class="row d-flex justify-content-between w-100">
                                                 <div class="col-md-6">
                                                  
-                                                  <img src="/Photos/mug/m1.jpg" width="240px" height="" 4alt="Publication Image">
+                                                  <img src="/Photos/mug/m1.jpg" width="240px" height="240px" 4alt="Publication Image">
                                                    
                                                 </div>
                                                 <div class="col-md-6">
@@ -136,14 +188,7 @@
                                                 </div>
                                               </div>
                                             </div>
-                                            <div class="modal-footer">
-                                              <div class="btn-toolbar">
-                                                
-                                                <div class="btn-group">
-                                                    <a href="#" class="btn btn-inverse disabled"><i class="icon-white icon-trash"></i></a>
-                                                </div>
-                                              </div>
-                                            </div>
+                                            
                                           </div>
                                           </div>
                                         </div>
@@ -157,13 +202,7 @@
                              <div class="publication-content">
                                  <span class="category">Girly</span>
                                  <h3><a href="#">Mug</a></h3>
-                                 <ul>
-                                     <li><i class="icofont-star"></i></li>
-                                     <li><i class="icofont-star"></i></li>
-                                     <li><i class="icofont-star"></i></li>
-                                     <li><i class="icofont-star"></i></li>
-                                     <li><i class="icofont-star"></i></li>
-                                 </ul>
+                            
                                  <h4 class="price">12d</h4>
                              </div>
  
@@ -179,10 +218,9 @@
                               <img src="/Photos/pack mutchy/mt1.jpg" width="263px" height="250" alt="Publication Image">
  
                                  <ul>
-                                     <li><a href="#" title="Add to Favorite"><i class="fa fa-heart"></i></a></li>
-                                     <li><a href="#" title="Add to Compare"><i class="fa fa-refresh"></i></a></li>
-                                     <li><a href="#" title="Quick View" data-toggle="modal" data-target="#exampleModalCenter"><i class="fa fa-search"></i></a>
-                                      <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                    
+                                     <li><a href="#" title="Quick View" data-toggle="modal" data-target="#m2"><i class="fa fa-search"></i></a>
+                                      <div class="modal fade" id="m2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                                         <div class="modal-dialog modal-dialog-centered" role="document">
                                           <div class="modal-content">
                                             <div class="modal-header">
@@ -196,7 +234,7 @@
                                                 <div class="row d-flex justify-content-between w-100">
                                                   <div class="col-md-6">
                                                    
-                                                    <img src="/Photos/pack mutchy/mt1.jpg" width="240px" height="" 4alt="Publication Image">
+                                                    <img src="/Photos/pack mutchy/mt1.jpg" width="240px" height="240px" 4alt="Publication Image">
                                                      
                                                   </div>
                                                   <div class="col-md-6">
@@ -221,13 +259,7 @@
                              <div class="publication-content">
                                  <span class="category">Tv show</span>
                                  <h3><a href="#">Pack Mutchy</a></h3>
-                                 <ul>
-                                     <li><i class="icofont-star"></i></li>
-                                     <li><i class="icofont-star"></i></li>
-                                     <li><i class="icofont-star"></i></li>
-                                     <li><i class="icofont-star"></i></li>
-                                     <li><i class="icofont-star"></i></li>
-                                 </ul>
+                                
                                  <h4 class="price">30d</h4>
                              </div>
  
@@ -243,10 +275,9 @@
                               <img src="/Photos/notebook/n1.jpg "width="263px" height="250" alt="Publication Image">
  
                                  <ul>
-                                     <li><a href="#" title="Add to Favorite"><i class="fa fa-heart"></i></a></li>
-                                     <li><a href="#" title="Add to Compare"><i class="fa fa-refresh"></i></a></li>
-                                     <li><a href="#" title="Quick View" data-toggle="modal" data-target="#exampleModalCenter"><i class="fa fa-search"></i></a>
-                                      <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                    
+                                     <li><a href="#" title="Quick View" data-toggle="modal" data-target="#m3"><i class="fa fa-search"></i></a>
+                                      <div class="modal fade" id="m3" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                                         <div class="modal-dialog modal-dialog-centered" role="document">
                                           <div class="modal-content">
                                             <div class="modal-header">
@@ -256,12 +287,23 @@
                                               </button>
                                             </div>
                                             <div class="modal-body">
-                                              ...
+                                              <div class="container-fluid p-0 m-0">
+                                                <div class="row d-flex justify-content-between w-100">
+                                                  <div class="col-md-6">
+                                                   
+                                                    <img src="/Photos/notebook/n1.jpg " class="size" alt="Publication Image">
+                                                     
+                                                  </div>
+                                                  <div class="col-md-6">
+                                                    <span class="font-weight-bold w-50">Available in <span  class="text-success font-weight-bold">Stock</span></span> <br><br>
+                                                    <label for="tentacles" class="font-weight-bold">Quantity</label>
+                                                    <input type="number" id="tentacles" name="tentacles" placeholder="Quantity" min="10" max="100" class="w-50"><br><br>
+                                                  <button class="btn btn-secondary"><a href="cart.html"></a>Add To Cart</button>
+                                                  </div>
+                                                </div>
+                                              </div>
                                             </div>
-                                            <div class="modal-footer">
-                                              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                              <button type="button" class="btn btn-primary">Save changes</button>
-                                            </div>
+                                            
                                           </div>
                                         </div>
                                       </div>
@@ -273,18 +315,12 @@
                              <div class="publication-content">
                                  <span class="category">Girly</span>
                                  <h3><a href="#">Notebook</a></h3>
-                                 <ul>
-                                     <li><i class="icofont-star"></i></li>
-                                     <li><i class="icofont-star"></i></li>
-                                     <li><i class="icofont-star"></i></li>
-                                     <li><i class="icofont-star"></i></li>
-                                     <li><i class="icofont-star"></i></li>
-                                 </ul>
+                                
                                  <h4 class="price">20d</h4>
                              </div>
  
                              <div class="add-to-cart">
-                                 <a href="#" class="default-btn">Add to Cart</a>
+                                 <a href="cart.html" class="default-btn">Add to Cart</a>
                              </div>
                          </div>
                      </div>
@@ -301,10 +337,9 @@
                               </a>
 
                               <ul>
-                                  <li><a href="#" title="Add to Favorite"><i class="fa fa-heart"></i></a></li>
-                                  <li><a href="#" title="Add to Compare"><i class="fa fa-refresh"></i></a></li>
-                                  <li><a href="#" title="Quick View" data-toggle="modal" data-target="#exampleModalCenter"><i class="fa fa-search"></i></a>
-                                    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                
+                                  <li><a href="#" title="Quick View" data-toggle="modal" data-target="#m4"><i class="fa fa-search"></i></a>
+                                    <div class="modal fade" id="m4" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                                       <div class="modal-dialog modal-dialog-centered" role="document">
                                         <div class="modal-content">
                                           <div class="modal-header">
@@ -314,12 +349,23 @@
                                             </button>
                                           </div>
                                           <div class="modal-body">
-                                            ...
+                                            <div class="container-fluid p-0 m-0">
+                                              <div class="row d-flex justify-content-between w-100">
+                                                <div class="col-md-6">
+                                                 
+                                                  <img src="/Photos/mug/m2.jpg" class="size" alt="Publication Image">
+                                                   
+                                                </div>
+                                                <div class="col-md-6">
+                                                  <span class="font-weight-bold w-50">Available in <span  class="text-success font-weight-bold">Stock</span></span> <br><br>
+                                                  <label for="tentacles" class="font-weight-bold">Quantity</label>
+                                                  <input type="number" id="tentacles" name="tentacles" placeholder="Quantity" min="10" max="100" class="w-50"><br><br>
+                                                <button class="btn btn-secondary"><a href="cart.html"></a>Add To Cart</button>
+                                                </div>
+                                              </div>
+                                            </div>
                                           </div>
-                                          <div class="modal-footer">
-                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                            <button type="button" class="btn btn-primary">Save changes</button>
-                                          </div>
+                                          
                                         </div>
                                       </div>
                                     </div>
@@ -332,18 +378,12 @@
                           <div class="publication-content">
                               <span class="category">Arabesque</span>
                               <h3><a href="#">Mug</a></h3>
-                              <ul>
-                                  <li><i class="icofont-star"></i></li>
-                                  <li><i class="icofont-star"></i></li>
-                                  <li><i class="icofont-star"></i></li>
-                                  <li><i class="icofont-star"></i></li>
-                                  <li><i class="icofont-star"></i></li>
-                              </ul>
+                              
                               <h4 class="price">12d</h4>
                           </div>
 
                           <div class="add-to-cart">
-                              <a href="#" class="default-btn">Add to Cart</a>
+                              <a href="cart.html" class="default-btn">Add to Cart</a>
                           </div>
                       </div>
                   </div>
@@ -354,10 +394,9 @@
                            <img src="/Photos/pack mutchy/mt2.jpg" width="263px" height="250" alt="Publication Image">
 
                               <ul>
-                                  <li><a href="#" title="Add to Favorite"><i class="fa fa-heart"></i></a></li>
-                                  <li><a href="#" title="Add to Compare"><i class="fa fa-refresh"></i></a></li>
-                                  <li><a href="#" title="Quick View" data-toggle="modal" data-target="#exampleModalCenter"><i class="fa fa-search"></i></a>
-                                    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        
+                                  <li><a href="#" title="Quick View" data-toggle="modal" data-target="#m5"><i class="fa fa-search"></i></a>
+                                    <div class="modal fade" id="m5" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                                       <div class="modal-dialog modal-dialog-centered" role="document">
                                         <div class="modal-content">
                                           <div class="modal-header">
@@ -367,12 +406,23 @@
                                             </button>
                                           </div>
                                           <div class="modal-body">
-                                            ...
+                                            <div class="container-fluid p-0 m-0">
+                                              <div class="row d-flex justify-content-between w-100">
+                                                <div class="col-md-6">
+                                                 
+                                                  <img src="/Photos/pack mutchy/mt2.jpg" class="size" alt="Publication Image">
+                                                   
+                                                </div>
+                                                <div class="col-md-6">
+                                                  <span class="font-weight-bold w-50">Available in <span  class="text-success font-weight-bold">Stock</span></span> <br><br>
+                                                  <label for="tentacles" class="font-weight-bold">Quantity</label>
+                                                  <input type="number" id="tentacles" name="tentacles" placeholder="Quantity" min="10" max="100" class="w-50"><br><br>
+                                                <button class="btn btn-secondary"><a href="cart.html"></a>Add To Cart</button>
+                                                </div>
+                                              </div>
+                                            </div>
                                           </div>
-                                          <div class="modal-footer">
-                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                            <button type="button" class="btn btn-primary">Save changes</button>
-                                          </div>
+                                          
                                         </div>
                                       </div>
                                     </div>
@@ -384,18 +434,12 @@
                           <div class="publication-content">
                               <span class="category">Girly</span>
                               <h3><a href="#">Pack Mutchy</a></h3>
-                              <ul>
-                                  <li><i class="icofont-star"></i></li>
-                                  <li><i class="icofont-star"></i></li>
-                                  <li><i class="icofont-star"></i></li>
-                                  <li><i class="icofont-star"></i></li>
-                                  <li><i class="icofont-star"></i></li>
-                              </ul>
+                              
                               <h4 class="price">30d</h4>
                           </div>
 
                           <div class="add-to-cart">
-                              <a href="#" class="default-btn">Add to Cart</a>
+                              <a href="cart.html" class="default-btn">Add to Cart</a>
                           </div>
                       </div>
                   </div>
@@ -406,10 +450,9 @@
                            <img src="/Photos/notebook/n2.jpg "width="263px" height="250" alt="Publication Image">
 
                               <ul>
-                                  <li><a href="#" title="Add to Favorite"><i class="fa fa-heart"></i></a></li>
-                                  <li><a href="#" title="Add to Compare"><i class="fa fa-refresh"></i></a></li>
-                                  <li><a href="#" title="Quick View" data-toggle="modal" data-target="#exampleModalCenter"><i class="fa fa-search"></i></a>
-                                    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                               
+                                  <li><a href="#" title="Quick View" data-toggle="modal" data-target="#m6"><i class="fa fa-search"></i></a>
+                                    <div class="modal fade" id="m6" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                                       <div class="modal-dialog modal-dialog-centered" role="document">
                                         <div class="modal-content">
                                           <div class="modal-header">
@@ -419,12 +462,23 @@
                                             </button>
                                           </div>
                                           <div class="modal-body">
-                                            ...
+                                            <div class="container-fluid p-0 m-0">
+                                              <div class="row d-flex justify-content-between w-100">
+                                                <div class="col-md-6">
+                                                 
+                                                  <img src="/Photos/notebook/n2.jpg " class="size" alt="Publication Image">
+                                                   
+                                                </div>
+                                                <div class="col-md-6">
+                                                  <span class="font-weight-bold w-50">Available in <span  class="text-success font-weight-bold">Stock</span></span> <br><br>
+                                                  <label for="tentacles" class="font-weight-bold">Quantity</label>
+                                                  <input type="number" id="tentacles" name="tentacles" placeholder="Quantity" min="10" max="100" class="w-50"><br><br>
+                                                <button class="btn btn-secondary"><a href="cart.html"></a>Add To Cart</button>
+                                                </div>
+                                              </div>
+                                            </div>
                                           </div>
-                                          <div class="modal-footer">
-                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                            <button type="button" class="btn btn-primary">Save changes</button>
-                                          </div>
+                                          
                                         </div>
                                       </div>
                                     </div>
@@ -436,18 +490,12 @@
                           <div class="publication-content">
                               <span class="category">Girly</span>
                               <h3><a href="#">Notebook</a></h3>
-                              <ul>
-                                  <li><i class="icofont-star"></i></li>
-                                  <li><i class="icofont-star"></i></li>
-                                  <li><i class="icofont-star"></i></li>
-                                  <li><i class="icofont-star"></i></li>
-                                  <li><i class="icofont-star"></i></li>
-                              </ul>
+                              
                               <h4 class="price">20d</h4>
                           </div>
 
                           <div class="add-to-cart">
-                              <a href="#" class="default-btn">Add to Cart</a>
+                              <a href="cart.html" class="default-btn">Add to Cart</a>
                           </div>
                       </div>
                   </div>
@@ -463,10 +511,9 @@
               </a>
 
               <ul>
-                  <li><a href="#" title="Add to Favorite"><i class="fa fa-heart"></i></a></li>
-                  <li><a href="#" title="Add to Compare"><i class="fa fa-refresh"></i></a></li>
-                  <li><a href="#" title="Quick View" data-toggle="modal" data-target="#exampleModalCenter"><i class="fa fa-search"></i></a>
-                    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                  
+                  <li><a href="#" title="Quick View" data-toggle="modal" data-target="#m7"><i class="fa fa-search"></i></a>
+                    <div class="modal fade" id="m7" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                       <div class="modal-dialog modal-dialog-centered" role="document">
                         <div class="modal-content">
                           <div class="modal-header">
@@ -476,12 +523,23 @@
                             </button>
                           </div>
                           <div class="modal-body">
-                            ...
+                            <div class="container-fluid p-0 m-0">
+                              <div class="row d-flex justify-content-between w-100">
+                                <div class="col-md-6">
+                                 
+                                  <img src="/Photos/mug/m3.jpg " class="size" alt="Publication Image">
+                                   
+                                </div>
+                                <div class="col-md-6">
+                                  <span class="font-weight-bold w-50">Available in <span  class="text-success font-weight-bold">Stock</span></span> <br><br>
+                                  <label for="tentacles" class="font-weight-bold">Quantity</label>
+                                  <input type="number" id="tentacles" name="tentacles" placeholder="Quantity" min="10" max="100" class="w-50"><br><br>
+                                <button class="btn btn-secondary"><a href="cart.html"></a>Add To Cart</button>
+                                </div>
+                              </div>
+                            </div>
                           </div>
-                          <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-primary">Save changes</button>
-                          </div>
+                          
                         </div>
                       </div>
                     </div>
@@ -493,18 +551,12 @@
           <div class="publication-content">
               <span class="category">Arabesque</span>
               <h3><a href="#">Mug</a></h3>
-              <ul>
-                  <li><i class="icofont-star"></i></li>
-                  <li><i class="icofont-star"></i></li>
-                  <li><i class="icofont-star"></i></li>
-                  <li><i class="icofont-star"></i></li>
-                  <li><i class="icofont-star"></i></li>
-              </ul>
+              
               <h4 class="price">12d</h4>
           </div>
 
           <div class="add-to-cart">
-              <a href="#" class="default-btn">Add to Cart</a>
+              <a href="cart.html" class="default-btn">Add to Cart</a>
           </div>
       </div>
   </div>
@@ -515,10 +567,9 @@
            <img src="/Photos/pack mutchy/mt3.jpg" width="263px" height="250" alt="Publication Image">
 
               <ul>
-                  <li><a href="#" title="Add to Favorite"><i class="fa fa-heart"></i></a></li>
-                  <li><a href="#" title="Add to Compare"><i class="fa fa-refresh"></i></a></li>
-                  <li><a href="#" title="Quick View" data-toggle="modal" data-target="#exampleModalCenter"><i class="fa fa-search"></i></a>
-                    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                  
+                  <li><a href="#" title="Quick View" data-toggle="modal" data-target="#m8"><i class="fa fa-search"></i></a>
+                    <div class="modal fade" id="m8" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                       <div class="modal-dialog modal-dialog-centered" role="document">
                         <div class="modal-content">
                           <div class="modal-header">
@@ -528,7 +579,21 @@
                             </button>
                           </div>
                           <div class="modal-body">
-                            ...
+                            <div class="container-fluid p-0 m-0">
+                              <div class="row d-flex justify-content-between w-100">
+                                <div class="col-md-6">
+                                 
+                                  <img src="/Photos/pack mutchy/mt3.jpg" class="size" alt="Publication Image">
+                                   
+                                </div>
+                                <div class="col-md-6">
+                                  <span class="font-weight-bold w-50">Available in <span  class="text-success font-weight-bold">Stock</span></span> <br><br>
+                                  <label for="tentacles" class="font-weight-bold">Quantity</label>
+                                  <input type="number" id="tentacles" name="tentacles" placeholder="Quantity" min="10" max="100" class="w-50"><br><br>
+                                <button class="btn btn-secondary"><a href="cart.html"></a>Add To Cart</button>
+                                </div>
+                              </div>
+                            </div>
                           </div>
                           <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -544,18 +609,12 @@
           <div class="publication-content">
               <span class="category">Tv show</span>
               <h3><a href="#">Pack Mutchy</a></h3>
-              <ul>
-                  <li><i class="icofont-star"></i></li>
-                  <li><i class="icofont-star"></i></li>
-                  <li><i class="icofont-star"></i></li>
-                  <li><i class="icofont-star"></i></li>
-                  <li><i class="icofont-star"></i></li>
-              </ul>
+            
               <h4 class="price">30d</h4>
           </div>
 
           <div class="add-to-cart">
-              <a href="#" class="default-btn">Add to Cart</a>
+              <a href="cart.html" class="default-btn">Add to Cart</a>
           </div>
       </div>
   </div>
@@ -566,10 +625,9 @@
            <img src="/Photos/notebook/3.jpg "width="263px" height="250" alt="Publication Image">
 
               <ul>
-                  <li><a href="#" title="Add to Favorite"><i class="fa fa-heart"></i></a></li>
-                  <li><a href="#" title="Add to Compare"><i class="fa fa-refresh"></i></a></li>
-                  <li><a href="#" title="Quick View" data-toggle="modal" data-target="#exampleModalCenter"><i class="fa fa-search"></i></a>
-                    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                
+                  <li><a href="#" title="Quick View" data-toggle="modal" data-target="#m9"><i class="fa fa-search"></i></a>
+                    <div class="modal fade" id="m9" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                       <div class="modal-dialog modal-dialog-centered" role="document">
                         <div class="modal-content">
                           <div class="modal-header">
@@ -579,12 +637,23 @@
                             </button>
                           </div>
                           <div class="modal-body">
-                            ...
+                            <div class="container-fluid p-0 m-0">
+                              <div class="row d-flex justify-content-between w-100">
+                                <div class="col-md-6">
+                                 
+                                  <img src="/Photos/notebook/3.jpg " class="size" alt="Publication Image">
+                                   
+                                </div>
+                                <div class="col-md-6">
+                                  <span class="font-weight-bold w-50">Available in <span  class="text-success font-weight-bold">Stock</span></span> <br><br>
+                                  <label for="tentacles" class="font-weight-bold">Quantity</label>
+                                  <input type="number" id="tentacles" name="tentacles" placeholder="Quantity" min="10" max="100" class="w-50"><br><br>
+                                <button class="btn btn-secondary"><a href="cart.html"></a>Add To Cart</button>
+                                </div>
+                              </div>
+                            </div>
                           </div>
-                          <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-primary">Save changes</button>
-                          </div>
+                          
                         </div>
                       </div>
                     </div>
@@ -596,18 +665,12 @@
           <div class="publication-content">
               <span class="category">Girly</span>
               <h3><a href="#">Notebook</a></h3>
-              <ul>
-                  <li><i class="icofont-star"></i></li>
-                  <li><i class="icofont-star"></i></li>
-                  <li><i class="icofont-star"></i></li>
-                  <li><i class="icofont-star"></i></li>
-                  <li><i class="icofont-star"></i></li>
-              </ul>
+             
               <h4 class="price">20d</h4>
           </div>
 
           <div class="add-to-cart">
-              <a href="#" class="default-btn">Add to Cart</a>
+              <a href="cart.html" class="default-btn">Add to Cart</a>
           </div>
       </div>
   </div>
@@ -624,10 +687,9 @@
               </a>
 
               <ul>
-                  <li><a href="#" title="Add to Favorite"><i class="fa fa-heart"></i></a></li>
-                  <li><a href="#" title="Add to Compare"><i class="fa fa-refresh"></i></a></li>
-                  <li><a href="#" title="Quick View" data-toggle="modal" data-target="#exampleModalCenter"><i class="fa fa-search"></i></a>
-                    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                 
+                  <li><a href="#" title="Quick View" data-toggle="modal" data-target="#m10"><i class="fa fa-search"></i></a>
+                    <div class="modal fade" id="m10" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                       <div class="modal-dialog modal-dialog-centered" role="document">
                         <div class="modal-content">
                           <div class="modal-header">
@@ -637,12 +699,23 @@
                             </button>
                           </div>
                           <div class="modal-body">
-                            ...
+                            <div class="container-fluid p-0 m-0">
+                              <div class="row d-flex justify-content-between w-100">
+                                <div class="col-md-6">
+                                 
+                                  <img src="/Photos/mug/m4.jpg " class="size" alt="Publication Image">
+                                   
+                                </div>
+                                <div class="col-md-6">
+                                  <span class="font-weight-bold w-50">Available in <span  class="text-success font-weight-bold">Stock</span></span> <br><br>
+                                  <label for="tentacles" class="font-weight-bold">Quantity</label>
+                                  <input type="number" id="tentacles" name="tentacles" placeholder="Quantity" min="10" max="100" class="w-50"><br><br>
+                                <button class="btn btn-secondary"><a href="cart.html"></a>Add To Cart</button>
+                                </div>
+                              </div>
+                            </div>
                           </div>
-                          <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-primary">Save changes</button>
-                          </div>
+                        
                         </div>
                       </div>
                     </div>
@@ -655,18 +728,12 @@
           <div class="publication-content">
               <span class="category">Hand Made</span>
               <h3><a href="#">Mug</a></h3>
-              <ul>
-                  <li><i class="icofont-star"></i></li>
-                  <li><i class="icofont-star"></i></li>
-                  <li><i class="icofont-star"></i></li>
-                  <li><i class="icofont-star"></i></li>
-                  <li><i class="icofont-star"></i></li>
-              </ul>
+              
               <h4 class="price">12d</h4>
           </div>
 
           <div class="add-to-cart">
-              <a href="#" class="default-btn">Add to Cart</a>
+              <a href="cart.html" class="default-btn">Add to Cart</a>
           </div>
       </div>
   </div>
@@ -677,10 +744,9 @@
            <img src="/Photos/pack mutchy/mt4.jpg" width="263px" height="250" alt="Publication Image">
 
               <ul>
-                  <li><a href="#" title="Add to Favorite"><i class="fa fa-heart"></i></a></li>
-                  <li><a href="#" title="Add to Compare"><i class="fa fa-refresh"></i></a></li>
-                  <li><a href="#" title="Quick View" data-toggle="modal" data-target="#exampleModalCenter"><i class="fa fa-search"></i></a>
-                    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                 
+                  <li><a href="#" title="Quick View" data-toggle="modal" data-target="#m11"><i class="fa fa-search"></i></a>
+                    <div class="modal fade" id="m11" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                       <div class="modal-dialog modal-dialog-centered" role="document">
                         <div class="modal-content">
                           <div class="modal-header">
@@ -690,12 +756,23 @@
                             </button>
                           </div>
                           <div class="modal-body">
-                            ...
+                            <div class="container-fluid p-0 m-0">
+                              <div class="row d-flex justify-content-between w-100">
+                                <div class="col-md-6">
+                                 
+                                  <img src="/Photos/pack mutchy/mt4.jpg" class="size" alt="Publication Image">
+                                   
+                                </div>
+                                <div class="col-md-6">
+                                  <span class="font-weight-bold w-50">Available in <span  class="text-success font-weight-bold">Stock</span></span> <br><br>
+                                  <label for="tentacles" class="font-weight-bold">Quantity</label>
+                                  <input type="number" id="tentacles" name="tentacles" placeholder="Quantity" min="10" max="100" class="w-50"><br><br>
+                                <button class="btn btn-secondary"><a href="cart.html"></a>Add To Cart</button>
+                                </div>
+                              </div>
+                            </div>
                           </div>
-                          <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-primary">Save changes</button>
-                          </div>
+                          
                         </div>
                       </div>
                     </div>
@@ -708,18 +785,12 @@
           <div class="publication-content">
               <span class="category">Tv show</span>
               <h3><a href="#">Pack Mutchy</a></h3>
-              <ul>
-                  <li><i class="icofont-star"></i></li>
-                  <li><i class="icofont-star"></i></li>
-                  <li><i class="icofont-star"></i></li>
-                  <li><i class="icofont-star"></i></li>
-                  <li><i class="icofont-star"></i></li>
-              </ul>
+              
               <h4 class="price">30</h4>
           </div>
 
           <div class="add-to-cart">
-              <a href="#" class="default-btn">Add to Cart</a>
+              <a href="cart.html" class="default-btn">Add to Cart</a>
           </div>
       </div>
   </div>
@@ -730,10 +801,9 @@
            <img src="/Photos/notebook/n4.jpg "width="263px" height="250" alt="Publication Image">
 
               <ul>
-                  <li><a href="#" title="Add to Favorite"><i class="fa fa-heart"></i></a></li>
-                  <li><a href="#" title="Add to Compare"><i class="fa fa-refresh"></i></a></li>
-                  <li><a href="#" title="Quick View" data-toggle="modal" data-target="#exampleModalCenter"><i class="fa fa-search"></i></a>
-                    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+              
+                  <li><a href="#" title="Quick View" data-toggle="modal" data-target="#m11"><i class="fa fa-search"></i></a>
+                    <div class="modal fade" id="m11" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                       <div class="modal-dialog modal-dialog-centered" role="document">
                         <div class="modal-content">
                           <div class="modal-header">
@@ -743,12 +813,23 @@
                             </button>
                           </div>
                           <div class="modal-body">
-                            ...
+                            <div class="container-fluid p-0 m-0">
+                              <div class="row d-flex justify-content-between w-100">
+                                <div class="col-md-6">
+                                 
+                                  <img src="/Photos/notebook/n4.jpg " class="size" alt="Publication Image">
+                                   
+                                </div>
+                                <div class="col-md-6">
+                                  <span class="font-weight-bold w-50">Available in <span  class="text-success font-weight-bold">Stock</span></span> <br><br>
+                                  <label for="tentacles" class="font-weight-bold">Quantity</label>
+                                  <input type="number" id="tentacles" name="tentacles" placeholder="Quantity" min="10" max="100" class="w-50"><br><br>
+                                <button class="btn btn-secondary"><a href="cart.html"></a>Add To Cart</button>
+                                </div>
+                              </div>
+                            </div>
                           </div>
-                          <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-primary">Save changes</button>
-                          </div>
+                          
                         </div>
                       </div>
                     </div>
@@ -761,18 +842,12 @@
           <div class="publication-content">
               <span class="category">Girly</span>
               <h3><a href="#">Notebook</a></h3>
-              <ul>
-                  <li><i class="icofont-star"></i></li>
-                  <li><i class="icofont-star"></i></li>
-                  <li><i class="icofont-star"></i></li>
-                  <li><i class="icofont-star"></i></li>
-                  <li><i class="icofont-star"></i></li>
-              </ul>
+              
               <h4 class="price">20</h4>
           </div>
 
           <div class="add-to-cart">
-              <a href="#" class="default-btn">Add to Cart</a>
+              <a href="cart.html" class="default-btn">Add to Cart</a>
           </div>
       </div>
   </div>
@@ -794,29 +869,28 @@
         <nav aria-label="Page navigation example">
           <div class="text-center d-flex justify-content-md-center">
           <ul class="pagination">
-            <li class="page-item"><a class="page-link text-dark font-weight-bold" href="Shop.html">Previous</a></li>
+            <li class="page-item"><a class="page-link text-dark font-weight-bold" href="#">Previous</a></li>
             <li class="page-item"><a class="page-link text-dark font-weight-bold" href="Shop.html">1</a></li>
-            <li class="page-item"><a class="page-link text-dark font-weight-bold" href="">2</a></li>
-            <li class="page-item"><a class="page-link text-dark font-weight-bold" href="#">Next</a></li>
+            <li class="page-item"><a class="page-link text-dark font-weight-bold" href="shop2.html">2</a></li>
+            <li class="page-item"><a class="page-link text-dark font-weight-bold" href="shop2.html">Next</a></li>
           </ul>
         </div>
         </nav>
       
 
-  <!---------------------- ----------------------Footer----------------------------------------------- -->
+   <!---------------------- ----------------------Footer----------------------------------------------- -->
 
 <footer class="page-footer font-small  pt-4">
   
-  <!-- Footer Links -->
-  <div class="container-fluid text-center text-md-left">
 
+  <div class="container-fluid text-center text-md-left">
 
     <div class="row">
 
       <div class="col-md-6 mt-md-0 mt-3">
 
-        <!-- Description ------------------------------------------>
-        <h5 class="text-uppercase text-danger">Ruyuu Print</h5>
+<!-----------------------------Description ------------------------------------------>
+        <h5 class="text-uppercase text-danger text-center">Ruyuu Print</h5>
         <span id="desc-footer"> Ruyuu Print offers you a whole bunch of personalized objects: 
                mugs, key ings, plant pots, notebooks.
               You can select colors and formats.</span>
@@ -828,34 +902,36 @@
 
   <div class="col-md-3 mb-md-0 mb-3">
 
-    <!-----------------------Quik Links--------------------- -->
-        <h5 class="text-uppercase text-danger">Quik Links</h5>
-        <a href="/Pages/Home.html">Home</a><br>
-        <a href="#about">About Us</a><br>
-        <a href="/Pages/Customized.html">Customized</a><br>
-        <a href="/Pages/Shop.html">Shop</a><br>
-        <a href="/Pages/Notebook.html">Notebook</a><br>
-        <a href="/Pages/Mug.html">Mug</a><br>
-        <a href="">Cart</a><br>
-        <a href="">Contact</a><br>
+<!-----------------------Quik Links--------------------------------------------------- -->
+        <h5 class="text-uppercase text-danger text-center">Quik Links</h5>
+       <div class="container d-flex flex-lg-wrap justify-content-between justify-content-center">
+        <a href="/Pages/Home.html">Home</a>
+        <a href="#about">About Us</a>
+        <a href="/Pages/Customized.html">Customized</a>
+        <a href="/Pages/Shop.html">Shop</a>
+        <a href="/Pages/Notebook.html">Notebook</a>
+        <a href="/Pages/Mug.html">Mug</a>
+        <a href="cart.html">Cart</a>
+        <a href="contact.html" >Contact</a>
+      </div>
   </div>
      <!--------------------------Conatct Icons------------------------>
       <div class="col-md-3 mb-md-0 mb-3">
-        <h5 class="text-uppercase text-danger">Contact</h5>
-        <ul class="social_footer_ul list-unstyled">
-          <li><a href="http://webenlance.com"><i class="fab fa-facebook-f"></i></a></li>
-          <li><a href="http://webenlance.com"><i class="fab fa-twitter"></i></a></li>
-          <li><a href="http://webenlance.com"><i class="fab fa-linkedin"></i></a></li>
-          <li><a href="http://webenlance.com"><i class="fab fa-instagram"></i></a></li>
+        <h5 class="text-uppercase text-danger text-center">Contact</h5>
+        <ul class="social_footer_ul list-unstyled d-flex justify-content-lg-between justify-content-center">
+          <li><a href="http://webenlance.com" class="col-sm-3"><i class="fab fa-facebook-f"></i></a></li>
+          <li><a href="http://webenlance.com"class="col-sm-3"><i class="fab fa-twitter"></i></a></li>
+          <li><a href="http://webenlance.com"class="col-sm-3"><i class="fab fa-linkedin"></i></a></li>
+          <li><a href="http://webenlance.com"class="col-sm-3"><i class="fab fa-instagram"></i></a></li>
           </ul>
       </div>
 
-  </div>
+  </div><br><br>
  
 
   <!-- Copyright -->
   <div class="footer-copyright text-center py-3">© 2020 Copyright:
-    <a href="https://mdbootstrap.com/">Ruyuu Print</a>
+    <a href="/Pages/Home.html">Ruyuu Print</a>
   </div>
   <!-- Copyright -->
 
@@ -863,15 +939,7 @@
 <!-- Footer -->
 
 
- <!-----------------------------------------------Js Header----------------------------------------------------->
-<script type="text/javascript">
-    window.addEventListener('scroll',function()
-    {
-        const header = document.querySelector('header');
-        header.classList.toggle("sticky", window.scrollY > 0);
-        
-     });
-</script>
+
 
 </body>
 </html>

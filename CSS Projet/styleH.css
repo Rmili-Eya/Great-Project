@@ -8,35 +8,32 @@
   scroll-behavior: smooth; /*un effet de défilement fluide */
 }
 /*************header Style*************/
-header {
+.navbar-nav {
   position: fixed;
   width: 100%;
   top: 0;
   left: 0;
-  padding: 40px 100px;
-  z-index: 10000;
+
   transition: 0.5s;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+
+  justify-content: flex-end;
 }
-header .logo {
-  color: #fff;
+.navbar-brand {
+  color: black;
   font-weight: 700;
   font-size: 2em;
-  text-decoration: none;
+  margin-left: 80px;
 }
-header .navigation {
+header .navbar-nav {
   position: relative;
   display: flex;
 }
-header .navigation li {
-  list-style: none;
+header .navbar-nav .nav-item {
   margin-left: 30px;
   font-weight: bold;
 }
 header .navigation li a {
-  text-decoration: none;
   color: #fff;
   font-weight: 300;
 }
@@ -44,40 +41,21 @@ body {
   min-height: 1000px;
 }
 /*style du nav */
-header.sticky {
+header {
   background: #fff;
-  padding: 10px 100px;
+
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0, 05);
 }
-header.sticky .logo {
-  color: #111;
-}
-header.sticky .navigation li a {
+
+.navbar-nav .nav-item .nav-link {
   color: #111;
   font-weight: bold;
 }
-header.sticky .navigation li a:hover {
+.navbar-nav .nav-item .nav-link:hover {
   color: #ff0157;
 }
 /* drop down menu de shop */
-.drop-down-menu {
-  list-style-type: none;
-  margin: 0px;
-  padding: 0px;
-  position: absolute;
-  display: none; /*pour que la liste sera caché*/
-  z-index: 999; /*quand on a fait le slide la menu est disparut donc on augmenter la valeur du drop*/
-}
-ul > li:hover .drop-down-menu {
-  display: block;
-}
-.drop-down-menu > li > a {
-  text-decoration: none;
-  color: white;
-  display: block;
-  padding: 15px;
-  background-color: black;
-}
+
 #l1 {
   color: white;
 }
@@ -86,6 +64,7 @@ p {
   font-weight: 300;
   color: #111;
 }
+
 /*Background image*/
 .banner {
   position: relative;
@@ -181,10 +160,8 @@ section {
 
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800");
 #newsletter {
-/*  background-color: black;*/
-background-color: #4158D0;
-background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
-
+  /*  background-color: black;*/
+  background-image: linear-gradient(to right, #868f96 0%, #596164 100%);
 }
 #newsinput {
   padding: 12px 20px;
@@ -200,10 +177,11 @@ background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
 h3 {
   text-align: center;
   font-size: 30px;
-  padding: 20px;
-  font-weight: 400;
+  padding: 10px;
+  font-weight: bold;
   letter-spacing: 1px;
-  color: #ff0157;
+  color: black;
+  text-align: center;
 }
 
 ::placeholder {
@@ -213,10 +191,11 @@ h3 {
   font-size: 20px;
   text-align: center;
 }
-button {
+.btn-letter {
   height: 50px;
   padding: 0;
   margin: 0;
+  background-color: black;
 }
 /*Boutton go to shop*/
 .btnShop {
