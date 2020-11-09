@@ -43,7 +43,7 @@
             </li>
           
           <li class="nav-item">
-            <a class="nav-link" href="/Pages/cart.html"><img src="https://img.icons8.com/windows/32/000000/shopping-basket-2.png"/></a>
+            <a class="nav-link" href="/Pages/cart.html"><i class="fas fa-cart-plus"></i></a>
         </li>
           <li class="nav-item">
             <a class="nav-link" href="/Pages/contact.html">Contact</a>
@@ -66,13 +66,14 @@
 <!----------------------------------------------Products Images--------------------------------------->
 <section>
   <div class="container-fluid">
+  
     <div class="row">
 
       <div class=" col-sm-6 col-md-4 w-50 card-img-top"><a href="Notebook.html">
         
         <img  src="/Photos/notebook/prodct.jpg"class="img-thumbnail"  alt="" >
         <div class="card-img-overlay ">
-          <span class="float-left font-weight-bold text-dark" id="color">Discover our </span>
+          <span class="float-left font-weight-bold " id="color">Discover our </span>
           <span class=" text-uppercase  font-weight-bold text-center" id="titreProduit">Notebook</span>
           
           
@@ -83,7 +84,7 @@
       <div class=" col-sm-6 col-md-4  w-50 card-img-top"><a href="Mug.html">
          <img  src="/Photos/mug/product2.jpg" alt="" class="img-thumbnail w-100" >
       <div class="card-img-overlay text-center">
-        <span class="float-left font-weight-bold text-dark ml-5" id="color">Discover our </span>
+        <span class="float-left font-weight-bold  ml-5" id="color">Discover our </span>
         <span class=" text-uppercase  font-weight-bold " id="titreProduit">Mug</span>
         
       </div>
@@ -92,7 +93,7 @@
       <div  class="col-sm-6 col-md-4 w-50 card-img-top"><a href="PackMutchy.html"> 
         <img src="/Photos/pack mutchy/mt4.jpg" class="img-thumbnail" alt="" >
         <div class="card-img-overlay text-center ">
-          <span class="float-left font-weight-bold text-dark" id="color">Discover our </span>
+          <span class="float-left font-weight-bold " id="color">Discover our </span>
           <span class=" text-uppercase  font-weight-bold" id="titreProduit">Pack Mutchy</span>
           
         </div>
@@ -103,8 +104,11 @@
 <hr>
 <!-------------------------------------------------Gallery-------------------------------------------->
         <section>
-        <div class="container mt-2">
+        
+        <div class="container-fluid mt-2">
+          
               <div class="row">
+                
 <!-------------------------------Filtre section----------------------------------------------------->
   <!-----------------Search button--------------------------->
   
@@ -135,7 +139,17 @@
                         <input type="checkbox" class="form-check-input" id="Pack Matchy">
                         <label class="form-check-label" for="Pack Matchy">Arabesque</label>
                       </div> 
-                        
+<!-------------Disponibility------------------>   
+<h2 class="title-filtre"><span>Disponibility</span></h2>
+<div class="form-check">
+  <input type="checkbox" class="form-check-input" id="IN stock ">
+  <label class="form-check-label" for="In stock">In stock</label>
+</div>
+<div class="form-check">
+  <input type="checkbox" class="form-check-input" id="Out of stock">
+  <label class="form-check-label" for="Pack Matchy">Out of stock</label>
+</div> 
+
  <!--------------------------------------------------Range------------------------------------------------->
                             <h2 class="title-filtre"><span>Price</span></h2>
                             <input type="range" min="-10" max="10"><br>
@@ -149,7 +163,23 @@
                
  <!--------------------------------------------Cards----------------------------------------------------> 
  <div class="col-md-9">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4"></div>
+      <div class="col-md-4"></div>
+      <div class="col-md-4 font-weight-bold mb-4" id="sort">Sort by:
+        <input list="Sort" class="w-50 border-dark">
 
+        <datalist id="Sort">
+          <option value="Pertinence">
+          <option value="Nom , A à Z">
+          <option value="Nom ,Z à A">
+          <option value="Prix ,Croissant">
+          <option value="Prix ,décroissant">
+        </datalist>
+      </div>
+    </div>
+  </div>
              <div class="container">
                 
                  
