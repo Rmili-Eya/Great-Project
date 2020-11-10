@@ -9,6 +9,9 @@
 body {
   min-height: 1000px;
 }
+body {
+  overflow-x: hidden;
+}
 /*Padding entre les sections */
 section {
   padding: 150px;
@@ -127,18 +130,8 @@ section {
 }
 
 /*nav tabs*/
-#nav-home {
-  width: 892.75px;
-  height: 456.47px;
-}
-#nav-profile {
-  width: 892.75px;
-  height: 456.47px;
-}
-#nav-contact {
-  width: 892.75px;
-  height: 456.47px;
-}
+
+
 #nav-about {
   width: 892.75px;
   height: 456.47px;
@@ -154,5 +147,5 @@ section {
 
 /*span words*/
 body {
-  overflow-x: scroll;
+  overflow-x: hidden;
 }

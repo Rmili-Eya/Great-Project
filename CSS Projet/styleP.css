@@ -97,3 +97,11 @@ header {
 hr {
   background-color: #ff0157;
 }
+#color{
+  color: #000;
+  font-weight: bold;
+  font-size: 20px;
+}
+span{
+  color: #ff0157;
+}
