@@ -6,9 +6,7 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
-body {
-  min-height: 1000px;
-}
+
 body {
   overflow-x: hidden;
 }
@@ -46,9 +44,7 @@ header .navigation li a {
   color: #fff;
   font-weight: 300;
 }
-body {
-  min-height: 1000px;
-}
+
 /*style du nav */
 header {
   background: #fff;
@@ -110,9 +106,7 @@ nav > div a.nav-item.nav-link:focus {
   border-radius: 0;
   transition: background 0.2s linear;
 }
-section {
-  padding: 150px;
-}
+
 #tentacles {
   border-color: #ff0157;
 }
@@ -131,7 +125,6 @@ section {
 
 /*nav tabs*/
 
-
 #nav-about {
   width: 892.75px;
   height: 456.47px;
@@ -144,8 +137,6 @@ section {
 .alignC {
   text-align: center;
 }
-
-/*span words*/
-body {
-  overflow-x: hidden;
+.size {
+  font-size: 30px;
 }

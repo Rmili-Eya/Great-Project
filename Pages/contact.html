@@ -68,19 +68,20 @@
     <form class="needs-validation" >
        <div class="row">
         <div class="form-group col-lg-6">
-            <input  id="name" class="input-text" class="form-control" required minlength="5">
-            <label for="name" class="label">Name</label>
+          <label for="name" class="label font-weight-bold">Name *</label>
+            <input  id="name" class="input-text" class="form-control" required minlength="4" maxlength="20">
+           
 
         </div> 
         <div class="form-group col-lg-6">
+          <label for="email" class="label  font-weight-bold">Email *</label>
             <input type="email" id="email" class="input-text" class="form-control" required >
-            <label for="email" class="label control-label">Email</label>
 
         </div>
         
-        <div class="form-group col-lg-12">
-            <input type="text" id="msg" class="input-text" class="form-control" required minlength="5" maxlength="80">
-            <label for="msg" class="label control-label">Message</label>
+        <div class="form-group font-weight-bold col-lg-12">
+          <label for="msg" class="label control-label">Message *</label>
+ <input type="text" id="msg" class="input-text" class="form-control" required minlength="5" maxlength="80">
 
         </div>
         <div class="form-group col-lg-12"><br><br>
@@ -96,59 +97,69 @@
 <div class="col-md-3"></div>
  </div>
 </section>
+
 <!---------------------- ----------------------Footer----------------------------------------------- -->
 
-<footer class="page-footer font-small  pt-4">
+<footer class="page-footer font-small ">
   
-    <!-- Footer Links -->
-    <div class="container-fluid text-center text-md-left">
-  
-  
-      <div class="row">
-  
-        <div class="col-md-6 mt-md-0 mt-3">
-  
-          <!-- Description ------------------------------------------>
-          <h5 class="text-uppercase text-danger">Ruyuu Print</h5>
-          <span id="desc-footer"> Ruyuu Print offers you a whole bunch of personalized objects: 
-                 mugs, key ings, plant pots, notebooks.
-                You can select colors and formats.</span>
-  
-        </div>
-       
-  
-    <hr class="clearfix w-100 d-md-none pb-3">
-  
-    <div class="col-md-3 mb-md-0 mb-3">
-  
-      <!-----------------------Quik Links--------------------- -->
-          <h5 class="text-uppercase text-danger">Quik Links</h5>
-          <a href="/Pages/Home.html">Home</a><br>
-          <a href="#about">About Us</a><br>
-          <a href="/Pages/Customized.html">Customized</a><br>
-          <a href="/Pages/Shop.html">Shop</a><br>
-          <a href="/Pages/Notebook.html">Notebook</a><br>
-          <a href="/Pages/Mug.html">Mug</a><br>
-          <a href="">Cart</a><br>
-          <a href="">Contact</a><br>
-    </div>
-       <!--------------------------Conatct Icons------------------------>
-        <div class="col-md-3 mb-md-0 mb-3">
-          <h5 class="text-uppercase text-danger">Contact</h5>
-          <ul class="social_footer_ul list-unstyled">
-            <li><a href="http://webenlance.com"><i class="fab fa-facebook-f"></i></a></li>
-            <li><a href="http://webenlance.com"><i class="fab fa-twitter"></i></a></li>
-            <li><a href="http://webenlance.com"><i class="fab fa-linkedin"></i></a></li>
-            <li><a href="http://webenlance.com"><i class="fab fa-instagram"></i></a></li>
-            </ul>
-        </div>
-  
-    </div>
-    <div class="footer-copyright text-center py-3">© 2020 Copyright:
-      <a href="https://mdbootstrap.com/">Ruyuu Print</a>
-    </div>
-  </footer>
- 
+
+  <div class="container-fluid text-center text-md-left">
+
+    <div class="row">
+
+      <div class="col-md-4">
+
+<!-----------------------------Description ------------------------------------------>
+<h5 class="text-uppercase font-weight-bold text-center">Ruyuu Print</h5>
+<span id="desc-footer"> Ruyuu Print offers you a whole bunch of personalized objects: 
+       mugs, key ings, plant pots, notebooks.
+      You can select colors and formats.</span>
+
+</div>
+
+
+
+<div class="col-md-4 ">
+
+<!-----------------------Quik Links--------------------------------------------------- -->
+<h5 class="text-uppercase font-weight-bold text-center">Quik Links</h5>
+<div class="container text-center ">
+<a href="/Pages/Home.html">Home</a><br>
+<a href="#about">About Us</a><br>
+<a href="/Pages/Customized.html">Customized</a><br>
+<a href="/Pages/Shop.html">Shop</a><br>
+<a href="/Pages/Notebook.html">Notebook</a><br>
+<a href="/Pages/Mug.html">Mug</a><br>
+<a href="cart.html">Cart</a><br>
+<a href="contact.html" >Contact</a><br>
+</div>
+</div>
+<!--------------------------Conatct Icons------------------------>
+<div class="col-md-4 ">
+<h5 class="text-uppercase font-weight-bold  text-center">Contact</h5>
+<div class="text-center d-flex justify-content-between">
+<span class="font-weight-bold ">Email: <pre> ruyuuprint@gmail.com</pre> </span> 
+<span class="font-weight-bold ">Phone: <pre>  98658741</pre></span >
+</div>
+<ul class="social_footer_ul list-unstyled d-flex justify-content-lg-between justify-content-center p-3">
+  <li><a href="http://webenlance.com" class="col-sm-3 size"><i class="fab fa-facebook-f"></i></a></li>
+  <li><a href="http://webenlance.com"class="col-sm-3 size"><i class="fab fa-twitter"></i></a></li>
+  <li><a href="http://webenlance.com"class="col-sm-3 size"><i class="fab fa-linkedin"></i></a></li>
+  <li><a href="http://webenlance.com"class="col-sm-3 size"><i class="fab fa-instagram"></i></a></li>
+  </ul>
+</div>
+
+</div>
+
+<!-- Copyright -->
+<div class="footer-copyright text-center mt-5">© 2020 Copyright:
+<a href="/Pages/Home.html">Ruyuu Print</a>
+</div>
+<!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+
   
   
   

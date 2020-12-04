@@ -62,7 +62,7 @@
  <section>
     <div class="container-fluid">
         <div class="row">
-          <div class="col-xs-12">
+          <div class="col-12">
             <nav>
               <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
                 <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Product</a>
@@ -71,13 +71,13 @@
                 <a class="nav-item nav-link" id="nav-about-tab" data-toggle="tab" href="#nav-about" role="tab" aria-controls="nav-about" aria-selected="false">Upload</a>
               </div>
             </nav>
-            <div class="tab-content py-3 px-3 px-sm-0" id="nav-tabContent">
+            <div class="tab-content " id="nav-tabContent">
              
               <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
                 <div class="row">
                     <div class="col-md-6 col-sm-6 "><br>
 
-<form action="" >
+<form  >
  <!--------------------Sélectionner Produits Modal----------------->
  <div class="alignC">               
 <button type="button" class="btn btn-secondary w-75 " data-toggle="modal" data-target="#m3">Select Product</button><br><br>
@@ -85,7 +85,7 @@
 <label for="favcolor" class="text-dark font-weight-bold">Select your favorite color:</label>
 <input type="color" id="favcolor" name="favcolor" value="#ff0000"><br><br>
                         
-<label for="tentacles" class="font-weight-bold">Quantity</label>
+<label for="tentacles" class="font-weight-bold border-dark">Quantity</label>
 <input type="number" id="tentacles" name="tentacles" placeholder="Quantity" min="10" max="100" class="w-50"><br><br>
 </div>            
   <!-- Modal -->
@@ -154,7 +154,8 @@
                   <div class="col-md-6">
 <!-------------------------------------------Modal---------------------------------------->
                 <div class="alignC">
-                  <a href="" data-toggle="modal" data-target="#TextModal" class="font-weight-bold text-decoration-none text-dark text-center"><h2> Texte</h2></a>                 
+                  <input type="text" class="border-dark w-50 m-0" placeholder="Enter the desired text"> <br><br>
+    
                   <select class="w-50 rounded bg-secondary m-0">
                     <option value="">Size</option>
                     <option value="1">1</option>
@@ -177,26 +178,8 @@
 <input type="color" id="favcolor" name="favcolor" value="#ff0000"><br><br>
 </div> 
                   </div>
-<!-- Modal du Text customized -->
-<div class="modal fade" id="TextModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title font-weight-bold" id="exampleModalLongTitle">Texte</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <input type="text">
-    
-      
 
-      </div>
-  
-    </div>
-  </div>
-</div>
+
 <!-----------------------------------------------2éme partie du tabs (photoproduit)----------------------------------------------------->
                   <div class="col-md-6" id="produit">
                     <img src="/Photos/home/mug blanc.jpeg" class="img-thumbnail" alt=""> 
@@ -228,19 +211,18 @@
           </div>
         
 </section>
- <!---------------------- ----------------------Footer----------------------------------------------- -->
+<!---------------------- ----------------------Footer----------------------------------------------- -->
 
- <footer class="page-footer font-small ">
+<footer class="page-footer font-small ">
   
 
   <div class="container-fluid text-center text-md-left">
 
     <div class="row">
 
-      <div class="col-md-6 mt-md-0 mt-3">
+      <div class="col-md-4">
 
-<!-----------------------------Description ------------------------------------------>
-        <h5 class="text-uppercase text-danger text-center">Ruyuu Print</h5>
+        <h5 class="text-uppercase font-weight-bold text-center">Ruyuu Print</h5>
         <span id="desc-footer"> Ruyuu Print offers you a whole bunch of personalized objects: 
                mugs, key ings, plant pots, notebooks.
               You can select colors and formats.</span>
@@ -248,39 +230,41 @@
       </div>
      
 
-  <hr class="clearfix w-100 d-md-none pb-3">
 
-  <div class="col-md-3 mb-md-0 mb-3">
+  <div class="col-md-4 ">
 
 <!-----------------------Quik Links--------------------------------------------------- -->
-        <h5 class="text-uppercase text-danger text-center">Quik Links</h5>
-       <div class="container d-flex flex-lg-wrap justify-content-between justify-content-center">
-        <a href="/Pages/Home.html">Home</a>
-        <a href="#about">About Us</a>
-        <a href="/Pages/Customized.html">Customized</a>
-        <a href="/Pages/Shop.html">Shop</a>
-        <a href="/Pages/Notebook.html">Notebook</a>
-        <a href="/Pages/Mug.html">Mug</a>
-        <a href="cart.html">Cart</a>
-        <a href="contact.html" >Contact</a>
+        <h5 class="text-uppercase font-weight-bold text-center">Quik Links</h5>
+       <div class="container text-center ">
+        <a href="/Pages/Home.html">Home</a><br>
+        <a href="#about">About Us</a><br>
+        <a href="/Pages/Customized.html">Customized</a><br>
+        <a href="/Pages/Shop.html">Shop</a><br>
+        <a href="/Pages/Notebook.html">Notebook</a><br>
+        <a href="/Pages/Mug.html">Mug</a><br>
+        <a href="cart.html">Cart</a><br>
+        <a href="contact.html" >Contact</a><br>
       </div>
   </div>
      <!--------------------------Conatct Icons------------------------>
-      <div class="col-md-3 mb-md-0 mb-3">
-        <h5 class="text-uppercase text-danger text-center">Contact</h5>
-        <ul class="social_footer_ul list-unstyled d-flex justify-content-lg-between justify-content-center">
-          <li><a href="http://webenlance.com" class="col-sm-3"><i class="fab fa-facebook-f"></i></a></li>
-          <li><a href="http://webenlance.com"class="col-sm-3"><i class="fab fa-twitter"></i></a></li>
-          <li><a href="http://webenlance.com"class="col-sm-3"><i class="fab fa-linkedin"></i></a></li>
-          <li><a href="http://webenlance.com"class="col-sm-3"><i class="fab fa-instagram"></i></a></li>
+      <div class="col-md-4 ">
+        <h5 class="text-uppercase font-weight-bold  text-center">Contact</h5>
+        <div class="text-center d-flex justify-content-between">
+        <span class="font-weight-bold ">Email: <pre> ruyuuprint@gmail.com</pre> </span> 
+        <span class="font-weight-bold ">Phone: <pre>  98658741</pre></span >
+      </div>
+        <ul class="social_footer_ul list-unstyled d-flex justify-content-lg-between justify-content-center p-3">
+          <li><a href="http://webenlance.com" class="col-sm-3 size"><i class="fab fa-facebook-f"></i></a></li>
+          <li><a href="http://webenlance.com"class="col-sm-3 size"><i class="fab fa-twitter"></i></a></li>
+          <li><a href="http://webenlance.com"class="col-sm-3 size"><i class="fab fa-linkedin"></i></a></li>
+          <li><a href="http://webenlance.com"class="col-sm-3 size"><i class="fab fa-instagram"></i></a></li>
           </ul>
       </div>
 
-  </div><br><br>
- 
+  </div>
 
   <!-- Copyright -->
-  <div class="footer-copyright text-center py-3">© 2020 Copyright:
+  <div class="footer-copyright text-center mt-5">© 2020 Copyright:
     <a href="/Pages/Home.html">Ruyuu Print</a>
   </div>
   <!-- Copyright -->

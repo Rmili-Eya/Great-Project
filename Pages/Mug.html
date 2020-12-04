@@ -20,30 +20,53 @@
 </head>
 <body>
 <!--------------------------------------------Nav------------------------------------------------------>    
-    <header class="sticky">
-        <a href="#" class="logo">Ruyuu Print</a> 
-        <ul class="navigation">
-           <li><a href="Home.html">Home</a></li>
-           <li><a href="/Pages/Home.html#about">About Us</a></li>
-           <li><a href="Customized.html">Customized</a></li>
-           <li>
-               <a href="Shop.html">Shop</a>
-               <ul class="drop-down-menu">
-                <li><a  id="l1" href="Notebook.html">Notebook</a> </li>
-                <li><a id="l1" href="Mug.html">Mug</a></li>
-                <li><a id="l1" href="PackMutchy.html">Pack Mutchy</a></li>
-            </ul>
+<header class="sticky">
+  <div class="container-fluid">
+      <!---------------------------NavBar-------------------------------------->
+      <nav class="navbar navbar-expand-lg navbar-light " id="nav-f">
+        <a class="navbar-brand" href="Home.html">Ruyuu Print</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHome" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        
+          <div class="collapse navbar-collapse" id="navbarHome">
+            <ul class="navbar-nav ml-auto">
+              
+              <li class="nav-item active">
+                <a class="nav-link" href="/Pages/Home.html">Home</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="/Pages/Home.html#about">About Us</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="/Pages/Customized.html">Customized </a>
+              </li>
+              
+              <li class="nav-item">
+                <a class="nav-link" href="/Pages/Shop.html">Shop </a>
             </li>
-           <li><a href="cart.html"><i class="fas fa-cart-plus"></i></a></li>
-           <li><a href="contact.html">Contact</a></li>
-        </ul>      
-        </header>
+              
+             
+              <li class="nav-item">
+                 <a class="nav-link" href="/Pages/cart.html"><i class="fas fa-cart-plus"></i></a>
+              </li>
+             <li class="nav-item">
+                 <a class="nav-link" href="/Pages/contact.html">Contact</a>
+             </li>
+            
+              
+            </ul>
+            
+          </div>
+        </nav>
+  </div>
+</header>
         <!-------------------------------------------Background image+Slogan+button--------------------------------------------------------->
         <section class="banner" id="banner">
             <div class="content">
              <h2>We do it Best</h2>
             
-             <a href="#" class="btn1">Register Now</a>
+             
             
             </div>
         </section>  
@@ -62,23 +85,34 @@
 
                 <ul>
                     
-                    <li><a href="#" title="Quick View" data-toggle="modal" data-target="#exampleModalCenter"><i class="fa fa-search"></i></a>
-                     <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <li><a href="#" title="Quick View" data-toggle="modal" data-target="#m1"><i class="fa fa-search"></i></a>
+                     <div class="modal fade" id="m1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                        <div class="modal-dialog modal-dialog-centered" role="document">
                          <div class="modal-content">
                            <div class="modal-header">
-                             <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                             <h5 class="modal-title" id="exampleModalLongTitle">Happiness is a cup of hot Coffee on a cold rainy day </h5>
                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                <span aria-hidden="true">&times;</span>
                              </button>
                            </div>
                            <div class="modal-body">
-                             ...
+                            <div class="container-fluid p-0 m-0">
+                              <div class="row d-flex justify-content-between w-100">
+                                <div class="col-md-6">
+                                 
+                                  <img src="/Photos/mug/m1.jpg" width="240px" height="240px" 4alt="Publication Image">
+                                   
+                                </div>
+                                <div class="col-md-6">
+                                  <span class="font-weight-bold w-50">Available in <span  class="text-success font-weight-bold">Stock</span></span> <br><br>
+                                  <label for="tentacles" class="font-weight-bold">Quantity</label>
+                                  <input type="number" id="tentacles" name="tentacles" placeholder="Quantity" min="10" max="100" class="w-50"><br><br>
+                                <button class="btn btn-secondary"><a href="cart.html"></a>Add To Cart</button>
+                                </div>
+                              </div>
+                            </div>
                            </div>
-                           <div class="modal-footer">
-                             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                             <button type="button" class="btn btn-primary">Save changes</button>
-                           </div>
+                           
                          </div>
                        </div>
                      </div>
@@ -91,13 +125,7 @@
             <div class="publication-content">
                 <span class="category">Girly</span>
                 <h3><a href="/Photos/mug/m1.jpg">Mug</a></h3>
-                <ul>
-                    <li><i class="icofont-star"></i></li>
-                    <li><i class="icofont-star"></i></li>
-                    <li><i class="icofont-star"></i></li>
-                    <li><i class="icofont-star"></i></li>
-                    <li><i class="icofont-star"></i></li>
-                </ul>
+                
                 <h4 class="price">12d</h4>
             </div>
 
@@ -113,25 +141,35 @@
              <img src="/Photos/mug/m2.jpg" width="263px" height="250" alt="Publication Image">
 
                 <ul>
-                    <li><a href="#" title="Add to Favorite"><i class="fa fa-heart"></i></a></li>
-                    <li><a href="#" title="Add to Compare"><i class="fa fa-refresh"></i></a></li>
-                    <li><a href="#" title="Quick View" data-toggle="modal" data-target="#exampleModalCenter"><i class="fa fa-search"></i></a>
-                     <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                 
+                    <li><a href="#" title="Quick View" data-toggle="modal" data-target="#m2"><i class="fa fa-search"></i></a>
+                     <div class="modal fade" id="m2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                        <div class="modal-dialog modal-dialog-centered" role="document">
                          <div class="modal-content">
                            <div class="modal-header">
-                             <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                             <h5 class="modal-title" id="exampleModalLongTitle">Happiness is a cup of hot Coffee on a cold rainy day </h5>
                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                <span aria-hidden="true">&times;</span>
                              </button>
                            </div>
                            <div class="modal-body">
-                             ...
+                            <div class="container-fluid p-0 m-0">
+                              <div class="row d-flex justify-content-between w-100">
+                                <div class="col-md-6">
+                                 
+                                  <img src="/Photos/mug/m2.jpg" width="240px" height="240px" 4alt="Publication Image">
+                                   
+                                </div>
+                                <div class="col-md-6">
+                                  <span class="font-weight-bold w-50">Available in <span  class="text-success font-weight-bold">Stock</span></span> <br><br>
+                                  <label for="tentacles" class="font-weight-bold">Quantity</label>
+                                  <input type="number" id="tentacles" name="tentacles" placeholder="Quantity" min="10" max="100" class="w-50"><br><br>
+                                <button class="btn btn-secondary"><a href="cart.html"></a>Add To Cart</button>
+                                </div>
+                              </div>
+                            </div>
                            </div>
-                           <div class="modal-footer">
-                             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                             <button type="button" class="btn btn-primary">Save changes</button>
-                           </div>
+                           
                          </div>
                        </div>
                      </div>
@@ -142,15 +180,9 @@
             
 
             <div class="publication-content">
-                <span class="category">Tv show</span>
-                <h3><a href="#">Pack Mutchy</a></h3>
-                <ul>
-                    <li><i class="icofont-star"></i></li>
-                    <li><i class="icofont-star"></i></li>
-                    <li><i class="icofont-star"></i></li>
-                    <li><i class="icofont-star"></i></li>
-                    <li><i class="icofont-star"></i></li>
-                </ul>
+                <span class="category">Arabesque</span>
+                <h3><a href="#">Mug</a></h3>
+                
                 <h4 class="price">30d</h4>
             </div>
 
@@ -167,8 +199,8 @@
 
                 <ul>
                     
-                    <li><a href="#" title="Quick View" data-toggle="modal" data-target="#exampleModalCenter"><i class="fa fa-search"></i></a>
-                     <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <li><a href="#" title="Quick View" data-toggle="modal" data-target="#m3"><i class="fa fa-search"></i></a>
+                     <div class="modal fade" id="m3" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                        <div class="modal-dialog modal-dialog-centered" role="document">
                          <div class="modal-content">
                            <div class="modal-header">
@@ -178,12 +210,23 @@
                              </button>
                            </div>
                            <div class="modal-body">
-                             ...
+                            <div class="container-fluid p-0 m-0">
+                              <div class="row d-flex justify-content-between w-100">
+                                <div class="col-md-6">
+                                 
+                                  <img src="/Photos/mug/m3.jpg" width="240px" height="240px" 4alt="Publication Image">
+                                   
+                                </div>
+                                <div class="col-md-6">
+                                  <span class="font-weight-bold w-50">Available in <span  class="text-success font-weight-bold">Stock</span></span> <br><br>
+                                  <label for="tentacles" class="font-weight-bold">Quantity</label>
+                                  <input type="number" id="tentacles" name="tentacles" placeholder="Quantity" min="10" max="100" class="w-50"><br><br>
+                                <button class="btn btn-secondary"><a href="cart.html"></a>Add To Cart</button>
+                                </div>
+                              </div>
+                            </div>
                            </div>
-                           <div class="modal-footer">
-                             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                             <button type="button" class="btn btn-primary">Save changes</button>
-                           </div>
+                           
                          </div>
                        </div>
                      </div>
@@ -193,15 +236,9 @@
             </figure>
 
             <div class="publication-content">
-                <span class="category">Girly</span>
-                <h3><a href="cart.html">Notebook</a></h3>
-                <ul>
-                    <li><i class="icofont-star"></i></li>
-                    <li><i class="icofont-star"></i></li>
-                    <li><i class="icofont-star"></i></li>
-                    <li><i class="icofont-star"></i></li>
-                    <li><i class="icofont-star"></i></li>
-                </ul>
+                <span class="category">Arabesque</span>
+                <h3><a href="cart.html">Mug</a></h3>
+                
                 <h4 class="price">20d</h4>
             </div>
 
@@ -235,10 +272,7 @@
                        <div class="modal-body">
                          ...
                        </div>
-                       <div class="modal-footer">
-                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                         <button type="button" class="btn btn-primary">Save changes</button>
-                       </div>
+                      
                      </div>
                    </div>
                  </div>
@@ -249,15 +283,9 @@
         </figure>
 
         <div class="publication-content">
-            <span class="category">Girly</span>
+            <span class="category">Hand Made</span>
             <h3><a href="#">Mug</a></h3>
-            <ul>
-                <li><i class="icofont-star"></i></li>
-                <li><i class="icofont-star"></i></li>
-                <li><i class="icofont-star"></i></li>
-                <li><i class="icofont-star"></i></li>
-                <li><i class="icofont-star"></i></li>
-            </ul>
+         
             <h4 class="price">12d</h4>
         </div>
 
@@ -301,15 +329,9 @@
         
 
         <div class="publication-content">
-            <span class="category">Tv show</span>
-            <h3><a href="#">Pack Mutchy</a></h3>
-            <ul>
-                <li><i class="icofont-star"></i></li>
-                <li><i class="icofont-star"></i></li>
-                <li><i class="icofont-star"></i></li>
-                <li><i class="icofont-star"></i></li>
-                <li><i class="icofont-star"></i></li>
-            </ul>
+            <span class="category">Floral</span>
+            <h3><a href="#">Mug</a></h3>
+         
             <h4 class="price">30d</h4>
         </div>
 
@@ -322,7 +344,7 @@
 <div class="col-sm-6 col-lg-4"> 
     <div class="single-publication">
         <figure>
-         <img src="/Photos/notebook/n6.jpg "width="263px" height="250" alt="Publication Image">
+         <img src="/Photos/mug/m6.jpg "width="263px" height="250" alt="Publication Image">
 
             <ul>
                
@@ -352,15 +374,9 @@
         </figure>
 
         <div class="publication-content">
-            <span class="category">Girly</span>
-            <h3><a href="#">Notebook</a></h3>
-            <ul>
-                <li><i class="icofont-star"></i></li>
-                <li><i class="icofont-star"></i></li>
-                <li><i class="icofont-star"></i></li>
-                <li><i class="icofont-star"></i></li>
-                <li><i class="icofont-star"></i></li>
-            </ul>
+            <span class="category">Tv Show</span>
+            <h3><a href="#">Mug</a></h3>
+           
             <h4 class="price">20d</h4>
         </div>
 
@@ -376,62 +392,64 @@
 </section>
 
 
-  <!-- Footer -->
-   <!---------------------- ----------------------Footer----------------------------------------------- -->
+ <!---------------------- ----------------------Footer----------------------------------------------- -->
 
-<footer class="page-footer font-small  pt-4">
+ <footer class="page-footer font-small ">
   
-  <!-- Footer Links -->
-  <div class="container-fluid text-center text-md-left">
 
+  <div class="container-fluid text-center text-md-left">
 
     <div class="row">
 
-      <div class="col-md-6 mt-md-0 mt-3">
+      <div class="col-md-4">
 
-        <!-- Description ------------------------------------------>
-        <h5 class="text-uppercase text-danger">Ruyuu Print</h5>
-        <span id="desc-footer"> Ruyuu Print offers you a whole bunch of personalized objects: 
-               mugs, key ings, plant pots, notebooks.
-              You can select colors and formats.</span>
+<!-----------------------------Description ------------------------------------------>
+<h5 class="text-uppercase font-weight-bold text-center">Ruyuu Print</h5>
+<span id="desc-footer"> Ruyuu Print offers you a whole bunch of personalized objects: 
+       mugs, key ings, plant pots, notebooks.
+      You can select colors and formats.</span>
 
-      </div>
-     
+</div>
 
-  <hr class="clearfix w-100 d-md-none pb-3">
 
-  <div class="col-md-3 mb-md-0 mb-3">
 
-    <!-----------------------Quik Links--------------------- -->
-        <h5 class="text-uppercase text-danger">Quik Links</h5>
-        <a href="/Pages/Home.html">Home</a><br>
-        <a href="#about">About Us</a><br>
-        <a href="/Pages/Customized.html">Customized</a><br>
-        <a href="/Pages/Shop.html">Shop</a><br>
-        <a href="/Pages/Notebook.html">Notebook</a><br>
-        <a href="/Pages/Mug.html">Mug</a><br>
-        <a href="">Cart</a><br>
-        <a href="">Contact</a><br>
-  </div>
-     <!--------------------------Conatct Icons------------------------>
-      <div class="col-md-3 mb-md-0 mb-3">
-        <h5 class="text-uppercase text-danger">Contact</h5>
-        <ul class="social_footer_ul list-unstyled">
-          <li><a href="http://webenlance.com"><i class="fab fa-facebook-f"></i></a></li>
-          <li><a href="http://webenlance.com"><i class="fab fa-twitter"></i></a></li>
-          <li><a href="http://webenlance.com"><i class="fab fa-linkedin"></i></a></li>
-          <li><a href="http://webenlance.com"><i class="fab fa-instagram"></i></a></li>
-          </ul>
-      </div>
+<div class="col-md-4 ">
 
-  </div>
- 
+<!-----------------------Quik Links--------------------------------------------------- -->
+<h5 class="text-uppercase font-weight-bold text-center">Quik Links</h5>
+<div class="container text-center ">
+<a href="/Pages/Home.html">Home</a><br>
+<a href="#about">About Us</a><br>
+<a href="/Pages/Customized.html">Customized</a><br>
+<a href="/Pages/Shop.html">Shop</a><br>
+<a href="/Pages/Notebook.html">Notebook</a><br>
+<a href="/Pages/Mug.html">Mug</a><br>
+<a href="cart.html">Cart</a><br>
+<a href="contact.html" >Contact</a><br>
+</div>
+</div>
+<!--------------------------Conatct Icons------------------------>
+<div class="col-md-4 ">
+<h5 class="text-uppercase font-weight-bold  text-center">Contact</h5>
+<div class="text-center d-flex justify-content-between">
+<span class="font-weight-bold ">Email: <pre> ruyuuprint@gmail.com</pre> </span> 
+<span class="font-weight-bold ">Phone: <pre>  98658741</pre></span >
+</div>
+<ul class="social_footer_ul list-unstyled d-flex justify-content-lg-between justify-content-center p-3">
+  <li><a href="http://webenlance.com" class="col-sm-3 size"><i class="fab fa-facebook-f"></i></a></li>
+  <li><a href="http://webenlance.com"class="col-sm-3 size"><i class="fab fa-twitter"></i></a></li>
+  <li><a href="http://webenlance.com"class="col-sm-3 size"><i class="fab fa-linkedin"></i></a></li>
+  <li><a href="http://webenlance.com"class="col-sm-3 size"><i class="fab fa-instagram"></i></a></li>
+  </ul>
+</div>
 
-  <!-- Copyright -->
-  <div class="footer-copyright text-center py-3">© 2020 Copyright:
-    <a href="https://mdbootstrap.com/">Ruyuu Print</a>
-  </div>
-  <!-- Copyright -->
+</div>
+
+<!-- Copyright -->
+<div class="footer-copyright text-center mt-5">© 2020 Copyright:
+<a href="/Pages/Home.html">Ruyuu Print</a>
+</div>
+<!-- Copyright -->
 
 </footer>
 <!-- Footer -->

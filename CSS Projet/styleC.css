@@ -16,10 +16,8 @@ body {
   width: 100%;
   top: 0;
   left: 0;
-
   transition: 0.5s;
   display: flex;
-
   justify-content: flex-end;
 }
 .navbar-brand {
@@ -40,9 +38,7 @@ header .navigation li a {
   color: #fff;
   font-weight: 300;
 }
-body {
-  min-height: 1000px;
-}
+
 /*style du nav */
 header {
   background: #fff;
@@ -82,7 +78,7 @@ header {
 .input-text {
   display: block;
   width: 100%;
-  height: 70px;
+
   border-width: 0 0 2px 0;
   border-color: gray;
   font-size: 18px;
@@ -126,4 +122,6 @@ a {
 body {
   overflow-x: hidden;
 }
-
+.size {
+  font-size: 30px;
+}

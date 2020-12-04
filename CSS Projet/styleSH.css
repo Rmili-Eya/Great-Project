@@ -85,7 +85,7 @@ p {
 .banner .content h2 {
   font-size: 5em;
   color: #fff;
-  margin-top: -160px;
+  margin-top: -200px;
 }
 .banner .content p {
   font-size: 1em;
@@ -181,9 +181,9 @@ header.sticky .navigation li a:hover {
   font-weight: 700;
   font-size: 1.5em;
 }
-/
- /*******/
- p,
+
+/*******/
+p,
 lab {
   font: 1rem "Fira Sans", sans-serif;
 }
@@ -268,7 +268,6 @@ input {
 .single-publication .publication-content ul li {
   display: inline-block;
   font-size: 18px;
-  color: #fec42d;
 }
 .single-publication .publication-content .price {
   font-size: 18px;
@@ -346,7 +345,7 @@ h2 {
   opacity: 0.6;
   -webkit-transform: scale(1);
   transform: scale(1);
-  -webkit-transition: 0.3s ease-in-out;
+  -webkit-transition: 0.3s ease-in-out; /*type et temps  de transition smoothy */
   transition: 0.3s ease-in-out;
 }
 .card-img-top:hover img {
@@ -366,8 +365,11 @@ hr {
   width: 240px;
   height: 240px;
 }
-#sort{
+#sort {
   color: #000;
   font-weight: bold;
   font-size: 20px;
+}
+.size {
+  font-size: 30px;
 }
